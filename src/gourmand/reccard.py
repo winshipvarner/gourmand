@@ -1777,6 +1777,7 @@ class IngredientController (plugin_loader.Pluggable):
                               unit: Optional[str] = None,
                               item: Optional[str] = None,
                               refid: Optional[int] = None,
+                              ingkey: Optional[int] = None,
                               optional: Optional[bool] = None):
         if amount is not None:
             self.imodel.set_value(iter, 1, str(amount))
