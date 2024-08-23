@@ -1777,6 +1777,7 @@ class IngredientController (plugin_loader.Pluggable):
                               unit: Optional[str] = None,
                               item: Optional[str] = None,
                               refid: Optional[int] = None,
+                              ingkey: Optional[int] = None,
                               optional: Optional[bool] = None):
         if amount is not None:
             self.imodel.set_value(iter, 1, str(amount))
@@ -2979,6 +2980,7 @@ class RecSelector(RecIndex):
 
     def ok(self, *args):
         debug('ok', 0)
+
         pre_iter = self.ingEditor.ingtree_ui.get_selected_ing()
         try:
             for rec in self.get_selected_recs_from_rec_tree():
