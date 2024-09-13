@@ -795,7 +795,7 @@ else:
 
 FRACTION_MATCHER = re.compile(NUM_AND_FRACTION_REGEXP,re.UNICODE)
 
-NUMBER_FINDER_REGEXP = r"(%(NUM_AND_FRACTION_REGEXP)s|%(NUMBER_NO_RANGE_REGEXP)s)(?=($| |[\s]))"%locals()
+NUMBER_FINDER_REGEXP = r"(%(NUM_AND_FRACTION_REGEXP)s|%(NUMBER_NO_RANGE_REGEXP)s|\d+[.,]*\d*)(?=($| |[\s]))"%locals()
 NUMBER_FINDER = re.compile(NUMBER_FINDER_REGEXP,re.UNICODE)
 
 # Note: the order matters on this range regular expression in order
