@@ -173,6 +173,7 @@ class Importer (SuspendableThread):
         # if yields/servings can't be recognized as a number, add them
         # to the instructions.
         if 'yields' in self.rec:
+            self.rec['yields'] = self.rec['yields'].replace(",",".")
             try:
                 self.rec['yields'] = float(self.rec['yields'])
             except:
@@ -275,7 +276,7 @@ class Importer (SuspendableThread):
 
     def parse_yields (self, str):
         '''Parse number and field.'''
-        m = re.match(r"(?P<prefix>\w+\s+)?(?P<num>[0-9/. ]+)(?P<unit>\s*\w+)?",str)
+        m = re.match(r"(?P<prefix>\D+\s+)?(?P<num>[0-9/. ]+)(?P<unit>\s*\w+)?",str)
         if m:
             num = m.group('num')
             num = convert.frac_to_float(num)

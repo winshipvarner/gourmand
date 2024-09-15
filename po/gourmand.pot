@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 10:46+0200\n"
+"POT-Creation-Date: 2024-08-24 21:56-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,7 +198,7 @@ msgid "Database _Name:"
 msgstr ""
 
 #: ../src/gourmand/ui/databaseChooser.ui.h:13 ../src/gourmand/shopgui.py:669
-#: ../src/gourmand/main.py:1035
+#: ../src/gourmand/main.py:1044
 msgid "_File"
 msgstr ""
 
@@ -558,8 +558,8 @@ msgstr ""
 #. None,
 #. ()),
 #. }
-#: ../src/gourmand/ui/shopCatEditor.ui.h:2 ../src/gourmand/reccard.py:2138
-#: ../src/gourmand/reccard.py:2198
+#: ../src/gourmand/ui/shopCatEditor.ui.h:2 ../src/gourmand/reccard.py:2140
+#: ../src/gourmand/reccard.py:2200
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:510
 #: ../src/gourmand/plugins/key_editor/recipeEditorPlugin.py:116
 #: ../src/gourmand/plugins/nutritional_information/nutritionInfoEditor.py:192
@@ -864,24 +864,24 @@ msgstr ""
 msgid "Choose Database File"
 msgstr ""
 
-#: ../src/gourmand/backends/db.py:1472 ../src/gourmand/reccard.py:942
+#: ../src/gourmand/backends/db.py:1484 ../src/gourmand/reccard.py:942
 #: ../src/gourmand/importers/interactive_importer.py:100
 msgid "New Recipe"
 msgstr ""
 
-#: ../src/gourmand/backends/db.py:2120 ../src/gourmand/backends/db.py:2121
+#: ../src/gourmand/backends/db.py:2132 ../src/gourmand/backends/db.py:2133
 msgid "Database Backup"
 msgstr ""
 
-#: ../src/gourmand/backends/db.py:2122
+#: ../src/gourmand/backends/db.py:2134
 msgid "Depending on the size of your database, this may take some time."
 msgstr ""
 
-#: ../src/gourmand/backends/db.py:2123 ../src/gourmand/threadManager.py:351
+#: ../src/gourmand/backends/db.py:2135 ../src/gourmand/threadManager.py:351
 msgid "Details"
 msgstr ""
 
-#: ../src/gourmand/backends/db.py:2124
+#: ../src/gourmand/backends/db.py:2136
 #, python-format
 msgid ""
 "A backup will be made as %s in case something goes wrong. If this upgrade "
@@ -936,7 +936,7 @@ msgstr ""
 msgid "Move selected items into %s"
 msgstr ""
 
-#: ../src/gourmand/shopgui.py:209 ../src/gourmand/main.py:1050
+#: ../src/gourmand/shopgui.py:209 ../src/gourmand/main.py:1059
 msgid "_Shopping List"
 msgstr ""
 
@@ -974,14 +974,14 @@ msgid "Remove recipes from shopping list"
 msgstr ""
 
 #: ../src/gourmand/shopgui.py:647 ../src/gourmand/reccard.py:227
-#: ../src/gourmand/reccard.py:866 ../src/gourmand/main.py:1048
+#: ../src/gourmand/reccard.py:866 ../src/gourmand/main.py:1057
 msgid "_Edit"
 msgstr ""
 
 #: ../src/gourmand/shopgui.py:670 ../src/gourmand/shopgui.py:673
 #: ../src/gourmand/reccard.py:229 ../src/gourmand/reccard.py:240
-#: ../src/gourmand/reccard.py:868 ../src/gourmand/main.py:1062
-#: ../src/gourmand/main.py:1065
+#: ../src/gourmand/reccard.py:868 ../src/gourmand/main.py:1071
+#: ../src/gourmand/main.py:1074
 msgid "_Help"
 msgstr ""
 
@@ -1020,7 +1020,7 @@ msgstr ""
 msgid "_Recipe"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:228 ../src/gourmand/main.py:212
+#: ../src/gourmand/reccard.py:228 ../src/gourmand/main.py:214
 msgid "_Go"
 msgstr ""
 
@@ -1057,7 +1057,7 @@ msgstr ""
 msgid "Print recipe"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:260 ../src/gourmand/main.py:1029
+#: ../src/gourmand/reccard.py:260 ../src/gourmand/main.py:1038
 msgid "Add to Shopping List"
 msgstr ""
 
@@ -1166,97 +1166,97 @@ msgstr ""
 msgid "Notes"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2135 ../src/gourmand/reccard.py:2165
+#: ../src/gourmand/reccard.py:2137 ../src/gourmand/reccard.py:2167
 msgid "Amt"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2136 ../src/gourmand/reccard.py:2166
+#: ../src/gourmand/reccard.py:2138 ../src/gourmand/reccard.py:2168
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:512
 #: ../src/gourmand/plugins/nutritional_information/nutritionModel.py:10
 msgid "Unit"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2137 ../src/gourmand/reccard.py:2167
+#: ../src/gourmand/reccard.py:2139 ../src/gourmand/reccard.py:2169
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:511
 #: ../src/gourmand/plugins/key_editor/recipeEditorPlugin.py:108
 #: ../src/gourmand/plugins/nutritional_information/nutritionInfoEditor.py:193
 msgid "Item"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2139 ../src/gourmand/reccard.py:2168
+#: ../src/gourmand/reccard.py:2141 ../src/gourmand/reccard.py:2170
 msgid "Optional"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2280
+#: ../src/gourmand/reccard.py:2282
 #, python-format
 msgid "The recipe %s (ID %s) is not in our database."
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2598
+#: ../src/gourmand/reccard.py:2600
 #, python-format
 msgid "Converted: %(amt)s %(unit)s"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2600
+#: ../src/gourmand/reccard.py:2602
 #, python-format
 msgid "Not Converted: %(amt)s %(unit)s"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2604
+#: ../src/gourmand/reccard.py:2606
 msgid "Changed unit."
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2605
+#: ../src/gourmand/reccard.py:2607
 #, python-format
 msgid ""
 "You have changed the unit for %(item)s from %(old)s to %(new)s. Would you "
 "like the amount converted or not?"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2616
+#: ../src/gourmand/reccard.py:2618
 #, python-format
 msgid "Converted %(old_amt)s %(old_unit)s to %(new_amt)s %(new_unit)s"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2628
+#: ../src/gourmand/reccard.py:2630
 #, python-format
 msgid "Unable to convert from %(old_unit)s to %(new_unit)s"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2683
+#: ../src/gourmand/reccard.py:2685
 msgid "Adding Ingredient Group"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2684
+#: ../src/gourmand/reccard.py:2686
 msgid "Enter a name for new subgroup of ingredients"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2685
+#: ../src/gourmand/reccard.py:2687
 msgid "Name of group:"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2948
+#: ../src/gourmand/reccard.py:2950
 msgid "Choose recipe"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2985
+#: ../src/gourmand/reccard.py:2987
 msgid "Recipe cannot call itself as an ingredient!"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:2986 ../src/gourmand/shopping.py:298
+#: ../src/gourmand/reccard.py:2988 ../src/gourmand/shopping.py:298
 msgid "Infinite recursion is not allowed in recipes!"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:3004
+#: ../src/gourmand/reccard.py:3006
 msgid "You haven't selected any recipes!"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:3016
+#: ../src/gourmand/reccard.py:3018
 #, python-format
 msgid "How much of %(title)s does your recipe call for?"
 msgstr ""
 
-#: ../src/gourmand/reccard.py:3026
+#: ../src/gourmand/reccard.py:3028
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:116
 #: ../src/gourmand/plugins/email_plugin/recipe_emailer.py:32
 #: ../src/gourmand/plugins/email_plugin/recipe_emailer.py:51
@@ -1544,291 +1544,291 @@ msgstr ""
 msgid "See _file with encoding"
 msgstr ""
 
-#: ../src/gourmand/main.py:112
+#: ../src/gourmand/main.py:114
 msgid "Import paused"
 msgstr ""
 
-#: ../src/gourmand/main.py:113
+#: ../src/gourmand/main.py:115
 msgid "Stop import"
 msgstr ""
 
-#: ../src/gourmand/main.py:192 ../src/gourmand/main.py:1077
+#: ../src/gourmand/main.py:194 ../src/gourmand/main.py:1086
 msgid "Recipe _Index"
 msgstr ""
 
-#: ../src/gourmand/main.py:193
+#: ../src/gourmand/main.py:195
 msgid "Shopping _List"
 msgstr ""
 
-#: ../src/gourmand/main.py:340
+#: ../src/gourmand/main.py:342
 msgid "translator-credits"
 msgstr ""
 
-#: ../src/gourmand/main.py:391
+#: ../src/gourmand/main.py:393
 msgid "Saved!"
 msgstr ""
 
-#: ../src/gourmand/main.py:402
+#: ../src/gourmand/main.py:404
 #, python-format
 msgid "Save your edits to %s"
 msgstr ""
 
-#: ../src/gourmand/main.py:413
+#: ../src/gourmand/main.py:415
 msgid "An import is in progress."
 msgstr ""
 
-#: ../src/gourmand/main.py:414
+#: ../src/gourmand/main.py:416
 msgid "An export is in progress."
 msgstr ""
 
-#: ../src/gourmand/main.py:415
+#: ../src/gourmand/main.py:417
 msgid "A delete is in progress."
 msgstr ""
 
-#: ../src/gourmand/main.py:417
+#: ../src/gourmand/main.py:419
 msgid "Exit program anyway?"
 msgstr ""
 
-#: ../src/gourmand/main.py:419
+#: ../src/gourmand/main.py:421
 msgid "Don't exit!"
 msgstr ""
 
-#: ../src/gourmand/main.py:465
+#: ../src/gourmand/main.py:467
 #, python-format
 msgid "Permanently deleted %s of %s recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:486 ../src/gourmand/main.py:501
+#: ../src/gourmand/main.py:488 ../src/gourmand/main.py:503
 msgid "Trash"
 msgstr ""
 
-#: ../src/gourmand/main.py:502
+#: ../src/gourmand/main.py:504
 msgid "Browse, permanently delete or undelete deleted recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:556
+#: ../src/gourmand/main.py:558
 msgid "Undeleted recipes "
 msgstr ""
 
-#: ../src/gourmand/main.py:695
+#: ../src/gourmand/main.py:698
 #, python-format
 msgid "Number of %(unit)s of %(title)s to shop for"
 msgstr ""
 
-#: ../src/gourmand/main.py:707
+#: ../src/gourmand/main.py:710
 #, python-format
 msgid "Multiply %s by:"
 msgstr ""
 
-#: ../src/gourmand/main.py:740
+#: ../src/gourmand/main.py:743
 #, python-format
 msgid "Set %(attributes)s for %(num)s selected recipe?"
 msgid_plural "Set %(attributes)s for %(num)s selected recipes?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/gourmand/main.py:747
+#: ../src/gourmand/main.py:750
 msgid "Any previously existing values will not be changed."
 msgstr ""
 
-#: ../src/gourmand/main.py:749
+#: ../src/gourmand/main.py:752
 msgid "The new values will overwrite any previously existing values."
 msgstr ""
 
-#: ../src/gourmand/main.py:750
+#: ../src/gourmand/main.py:753
 msgid "This change cannot be undone."
 msgstr ""
 
-#: ../src/gourmand/main.py:751
+#: ../src/gourmand/main.py:754
 msgid "Set values for selected recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:980
+#: ../src/gourmand/main.py:989
 msgid "Search recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1013
+#: ../src/gourmand/main.py:1022
 msgid "Open recipe"
 msgstr ""
 
-#: ../src/gourmand/main.py:1014
+#: ../src/gourmand/main.py:1023
 msgid "Open selected recipe"
 msgstr ""
 
-#: ../src/gourmand/main.py:1015
+#: ../src/gourmand/main.py:1024
 msgid "Delete recipe"
 msgstr ""
 
-#: ../src/gourmand/main.py:1016
+#: ../src/gourmand/main.py:1025
 msgid "Delete selected recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1017
+#: ../src/gourmand/main.py:1026
 msgid "Edit recipe"
 msgstr ""
 
-#: ../src/gourmand/main.py:1018
+#: ../src/gourmand/main.py:1027
 msgid "Open selected recipes in recipe editor view"
 msgstr ""
 
-#: ../src/gourmand/main.py:1020
+#: ../src/gourmand/main.py:1029
 msgid "E_xport selected recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1021
+#: ../src/gourmand/main.py:1030
 msgid "Export selected recipes to file"
 msgstr ""
 
-#: ../src/gourmand/main.py:1023
+#: ../src/gourmand/main.py:1032
 msgid "_Print"
 msgstr ""
 
-#: ../src/gourmand/main.py:1025
+#: ../src/gourmand/main.py:1034
 msgid "_Copy recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1027
+#: ../src/gourmand/main.py:1036
 msgid "Batch _edit recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1036
+#: ../src/gourmand/main.py:1045
 msgid "_New"
 msgstr ""
 
-#: ../src/gourmand/main.py:1038
+#: ../src/gourmand/main.py:1047
 msgid "_Import Recipe"
 msgstr ""
 
-#: ../src/gourmand/main.py:1039
+#: ../src/gourmand/main.py:1048
 msgid "Import recipe from file or page"
 msgstr ""
 
-#: ../src/gourmand/main.py:1040
+#: ../src/gourmand/main.py:1049
 msgid "Paste recipe"
 msgstr ""
 
-#: ../src/gourmand/main.py:1042
+#: ../src/gourmand/main.py:1051
 msgid "Export _all recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1043
+#: ../src/gourmand/main.py:1052
 msgid "Export all recipes to file"
 msgstr ""
 
-#: ../src/gourmand/main.py:1044
+#: ../src/gourmand/main.py:1053
 msgid "_Quit"
 msgstr ""
 
-#: ../src/gourmand/main.py:1047
+#: ../src/gourmand/main.py:1056
 msgid "_Actions"
 msgstr ""
 
-#: ../src/gourmand/main.py:1052
+#: ../src/gourmand/main.py:1061
 msgid "_Trash"
 msgstr ""
 
-#: ../src/gourmand/main.py:1055
+#: ../src/gourmand/main.py:1064
 msgid "_Preferences"
 msgstr ""
 
-#: ../src/gourmand/main.py:1057
+#: ../src/gourmand/main.py:1066
 msgid "_Plugins"
 msgstr ""
 
-#: ../src/gourmand/main.py:1058
+#: ../src/gourmand/main.py:1067
 msgid "Manage plugins which add extra functionality to Gourmand."
 msgstr ""
 
-#: ../src/gourmand/main.py:1060
+#: ../src/gourmand/main.py:1069
 msgid "Setti_ngs"
 msgstr ""
 
-#: ../src/gourmand/main.py:1063
+#: ../src/gourmand/main.py:1072
 msgid "_About"
 msgstr ""
 
-#: ../src/gourmand/main.py:1071
+#: ../src/gourmand/main.py:1080
 msgid "_Tools"
 msgstr ""
 
-#: ../src/gourmand/main.py:1072
+#: ../src/gourmand/main.py:1081
 msgid "_Timer"
 msgstr ""
 
-#: ../src/gourmand/main.py:1073
+#: ../src/gourmand/main.py:1082
 msgid "Show timer"
 msgstr ""
 
-#: ../src/gourmand/main.py:1078
+#: ../src/gourmand/main.py:1087
 msgid "Searchable index of recipes in the database."
 msgstr ""
 
-#: ../src/gourmand/main.py:1187
+#: ../src/gourmand/main.py:1196
 #, python-format
 msgid "Delete %s?"
 msgstr ""
 
-#: ../src/gourmand/main.py:1188
+#: ../src/gourmand/main.py:1197
 #, python-format
 msgid "You have unsaved changes to %s. Are you sure you want to delete?"
 msgstr ""
 
-#: ../src/gourmand/main.py:1217
+#: ../src/gourmand/main.py:1226
 msgid "Deleted"
 msgstr ""
 
-#: ../src/gourmand/main.py:1217
+#: ../src/gourmand/main.py:1226
 msgid "Untitled"
 msgstr ""
 
-#: ../src/gourmand/main.py:1225
+#: ../src/gourmand/main.py:1234
 msgid "Permanently delete recipes?"
 msgstr ""
 
-#: ../src/gourmand/main.py:1227
+#: ../src/gourmand/main.py:1236
 msgid "Permanently delete recipe?"
 msgstr ""
 
-#: ../src/gourmand/main.py:1228
+#: ../src/gourmand/main.py:1237
 #, python-format
 msgid "Are you sure you want to delete the recipe <i>%s</i>"
 msgstr ""
 
-#: ../src/gourmand/main.py:1230
+#: ../src/gourmand/main.py:1239
 msgid "Are you sure you want to delete the following recipes?"
 msgstr ""
 
-#: ../src/gourmand/main.py:1234
+#: ../src/gourmand/main.py:1243
 #, python-format
 msgid "Are you sure you want to delete the %s selected recipes?"
 msgstr ""
 
-#: ../src/gourmand/main.py:1236
+#: ../src/gourmand/main.py:1245
 msgid "See recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1244
+#: ../src/gourmand/main.py:1253
 msgid "Delete Recipes"
 msgstr ""
 
-#: ../src/gourmand/main.py:1246
+#: ../src/gourmand/main.py:1255
 msgid "Recipes deleted"
 msgstr ""
 
-#: ../src/gourmand/main.py:1271
+#: ../src/gourmand/main.py:1280
 #, python-format
 msgid "Deleted recipe %s"
 msgstr ""
 
-#: ../src/gourmand/main.py:1298
+#: ../src/gourmand/main.py:1307
 msgid "See Trash Now"
 msgstr ""
 
-#: ../src/gourmand/main.py:1337
+#: ../src/gourmand/main.py:1346
 msgid "Done!"
 msgstr ""
 
-#: ../src/gourmand/main.py:1345
+#: ../src/gourmand/main.py:1354
 msgid "Importing..."
 msgstr ""
 
