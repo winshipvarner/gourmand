@@ -6,6 +6,8 @@ import gourmand.exporters.exporter as exporter
 from gourmand.exporters.exportManager import ExportManager
 from gourmand.main import get_application
 
+from gourmand.i18n import _
+
 from .emailer import Emailer
 
 

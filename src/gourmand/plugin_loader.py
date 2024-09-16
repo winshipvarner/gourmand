@@ -37,13 +37,14 @@ class MasterLoader:
         # tools
         'unit_converter',
         'duplicate_finder',
+        'email_plugin'
         'spellcheck',
         # import/export
         'gxml_plugin',
         'html_plugin',
         'mastercook_import_plugin',
         'mealmaster_plugin',
-        'archive_plugin',
+        #'archive_plugin',
         'pdf_plugin',
         'plaintext_plugin',
         'krecipe_plugin',
