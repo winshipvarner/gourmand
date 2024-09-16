@@ -1,0 +1,8 @@
+[Gourmet Plugin]
+Module=email_plugin
+Version=1.0
+API_Version=1.0
+_Name=Email Recipe
+_Comment=Create an email from recipe.
+_Category=Tools
+Authors=Thomas M. Hinkle <thomas_hinkle@sf.net>
