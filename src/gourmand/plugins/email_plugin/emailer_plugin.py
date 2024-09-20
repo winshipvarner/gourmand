@@ -4,8 +4,8 @@ import gourmand.gtk_extras.dialog_extras as de
 from gourmand.i18n import _
 from gourmand.plugin import MainPlugin, RecDisplayModule, ToolPlugin, UIPlugin
 
+#from gourmand.exporters.recipe_emailer import RecipeEmailer
 from .recipe_emailer import RecipeEmailer
-
 
 class EmailRecipePlugin (MainPlugin, UIPlugin):
 
