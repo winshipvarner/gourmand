@@ -548,6 +548,11 @@ class RecCardDisplay (plugin_loader.Pluggable):
                                                           parent=self.window,
                                                           mult=self.mult)
         if fn:
+            fn = fn.replace("\"","&quot;")
+            fn = fn.replace("'","&apos;")
+            fn = fn.replace("&","&amp;")
+            fn = fn.replace("<","&lt;")
+            fn = fn.replace(">","&gt;")
             self.offer_url(_('Recipe successfully exported to '
                              '<a href="file:///%s">%s</a>')%(fn,fn),
                              url='file:///%s'%fn)

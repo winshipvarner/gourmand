@@ -159,6 +159,11 @@ class ExportManager (plugin_loader.Pluggable):
                 tmg = get_thread_manager_gui()
                 tmg.register_thread_with_dialog(_('Export')+' ('+myexp.label+')',
                                                 exporterInstance)
+                fn = fn.replace("\"","&quot;")
+                fn = fn.replace("'","&apos;")
+                fn = fn.replace("&","&amp;")
+                fn = fn.replace("<","&lt;")
+                fn = fn.replace(">","&gt;")
                 exporterInstance.connect('completed', tmg.notification_thread_done,
                     _('Recipes successfully exported to <a href="file:///%s">%s</a>')%(fn,fn))
                 tmg.show()
