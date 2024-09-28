@@ -1,4 +1,5 @@
 import os.path
+
 from pathlib import Path
 
 from gi.repository import Gdk, GdkPixbuf, Gtk
@@ -35,8 +36,9 @@ REC_ATTRS = [('title', _('Title'), 'Entry'),
              ('yield_unit', _('Yield Unit'), 'Combo'),
              ('preptime', _('Preparation Time'), 'Entry'),
              ('cooktime', _('Cooking Time'), 'Entry'),
+             ('last_modified', _('Last Modified'), None)
              ]
-
+             
 INT_REC_ATTRS = ['rating', 'preptime', 'cooktime']
 FLOAT_REC_ATTRS = ['yields']
 TEXT_ATTR_DIC = {'instructions': _('Instructions'),

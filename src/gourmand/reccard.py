@@ -453,6 +453,7 @@ class RecCardDisplay (plugin_loader.Pluggable):
             'yield_unit': self.update_yield_unit_display,
             'title': self.update_title_display,
             'link': self.update_link_display,
+            #'date_modified': self.update_date_modified_display
             }
         for attr in self.__display_items:
             if attr in special_display_functions:
@@ -472,8 +473,6 @@ class RecCardDisplay (plugin_loader.Pluggable):
                         widg.set_value(attval)
                     elif attr in ['preptime','cooktime']:
                         widg.set_text(convert.seconds_to_timestring(attval))
-                    else:
-                        widg.set_text(attval)
                         #if attr in ['modifications',#'instructions'
                         #            ]:
                         #    widg.set_use_markup(True)
@@ -1356,6 +1355,8 @@ class DescriptionEditorModule (TextEditor, RecEditorModule):
                 self.recent.append(attribute)
             elif widget_type == 'Combo':
                 self.reccom.append(attribute)
+            elif widget_type == None:
+                pass
             else:
                 raise ValueError(f"{attribute} with {widget_type} not supported")
 
@@ -1398,6 +1399,7 @@ class DescriptionEditorModule (TextEditor, RecEditorModule):
                 val = ', '.join(self.rg.rd.get_cats(self.current_rec))
             else:
                 val = getattr(self.current_rec, c)
+
             self.rw[c].insert_text(0, val or '')
             if isinstance(self.rw[c], Gtk.ComboBoxText):
                 self.rw[c].set_active(0)

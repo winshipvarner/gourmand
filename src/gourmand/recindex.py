@@ -1,3 +1,4 @@
+import time
 from gettext import ngettext
 from typing import List, Tuple, Union
 
@@ -685,6 +686,9 @@ class RecipeModel (pageable_store.PageableViewStore):
             cats = self.rd.get_cats(row)
             if cats: return ", ".join(cats)
             else: return ""
+        elif attr=='last_modified':
+            val = getattr(row,attr) or 0
+            return time.ctime(val)
         elif attr=='rec':
             return row
         elif attr=='thumb':
