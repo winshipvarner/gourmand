@@ -1356,6 +1356,8 @@ class DescriptionEditorModule (TextEditor, RecEditorModule):
                 self.recent.append(attribute)
             elif widget_type == 'Combo':
                 self.reccom.append(attribute)
+            elif widget_type == None:
+                pass
             else:
                 raise ValueError(f"{attribute} with {widget_type} not supported")
 
