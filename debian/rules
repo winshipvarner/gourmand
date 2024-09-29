@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ -Spybuild
+
+override_dh_auto_build-indep:
+	python3 setup.py build_i18n
+
+	dh_auto_build
+
+override_dh_auto_install-indep:
+	dh_auto_install --destdir=debian/gourmand
+
+override_dh_clean-indep:
+	dh_clean
+
+	find -name *.gourmet-plugin -delete
+	find -name *.mo -delete
+
+	-rm -rf src/gourmand.egg-info
+
+# No tests for now
+override_dh_auto_test:

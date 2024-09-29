@@ -77,7 +77,6 @@ src/gourmand/plugins/nutritional_information/nutritionInfoEditor.py
 src/gourmand/plugins/nutritional_information/shopping_plugin.py
 [type: gettext/glade]src/gourmand/plugins/nutritional_information/nut_recipe_card_display.ui
 src/gourmand/exporters/exporter.py
-src/gourmand/exporters/recipe_emailer.py
 src/gourmand/exporters/exportManager.py
 src/gourmand/exporters/printer.py
 src/gourmand/exporters/rtf_exporter.py

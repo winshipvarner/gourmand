@@ -1,4 +1,4 @@
---editable .[epub-export,mycookbook,pdf-export,spellcheck]
+--editable .[epub-export,mycookbook,pdf-export,spellcheck,recipe_scrapers]
 dogtail
 flake8
 isort

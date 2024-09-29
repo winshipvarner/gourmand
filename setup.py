@@ -195,13 +195,14 @@ setup(
         'pygobject>=3.40.1',
         'sqlalchemy<2',
         'toml>=0.10.2',
-        'recipe-scrapers>=14.27.0',
+        #'recipe-scrapers>=14.27.0',
     ],
     extras_require={
         'epub-export': ['ebooklib>=0.17.1'],
         'pdf-export': ['reportlab>=3.5.67'],
         'spellcheck': ['pyenchant',
                        'pygtkspellcheck'],
+         'recipe_scrapers' : ['python3-recipe-scrapers']
     },
     cmdclass={
         'bdist_wheel': BuildWheel,

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>io.github.GourmandRecipeManager.Gourmand</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-2.0+</project_license>
+	<name>Gourmand</name>
+	<summary>A recipe manager with the possibilities to import, organize, and tweak recipes </summary>
+	<description>
+		<p>Gourmand is a recipe-organizer that allows you to collect, search, organize, and browse your recipes. Gourmand can also generate shopping lists and calculate nutritional information.</p>
+	</description>
+	<launchable type="desktop-id">io.github.GourmandRecipeManager.Gourmand.desktop</launchable>
+	<url type="homepage">https://github.com/GourmandRecipeManager/gourmand</url>
+	<screenshots>
+		<screenshot type="default">
+			<image>https://github.com/GourmandRecipeManager/gourmand/raw/main/docs/recipe_view.png</image>
+		</screenshot>
+	</screenshots>
+	<provides>
+		<id>io.github.GourmandRecipeManager.Gourmand.desktop</id>
+	</provides>
+</component>
