@@ -141,4 +141,15 @@ It is run with [pytest](https://docs.pytest.org/):
 pytest
 ```
 
-Most modern python IDEs have support for running the tests usin pytest.
+Most modern python IDEs have support for running the tests using pytest.
+
+## Debian Package
+
+Here is how the Debian package is built:
+
+```bash
+pip3 install -e .
+dh_make --indep --createorig --native --packagename gourmand_1.1.1
+(deactivate;  dpkg-buildpackage -us -uc -b)
+
+```

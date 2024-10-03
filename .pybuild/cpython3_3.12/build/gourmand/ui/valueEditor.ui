@@ -61,12 +61,13 @@
               <object class="GtkScrolledWindow" id="scrolledwindow1">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="expand">True</property>
                 <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
                 <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
                 <child>
                   <object class="GtkTreeView" id="treeview">
                     <property name="visible">True</property>
-                    <property name="headers_visible">False</property>
+                    <property name="headers_visible">True</property>
                   </object>
                 </child>
               </object>

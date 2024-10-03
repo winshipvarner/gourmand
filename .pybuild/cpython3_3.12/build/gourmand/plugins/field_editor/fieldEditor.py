@@ -32,9 +32,11 @@ class FieldEditor:
             })
 
     def __setup_widgets__ (self):
+        sorted_model = Gtk.TreeModelSort()
+        #sorted_model.set_sort_column_id(0, Gtk.SortType.ASCENDING)
         for w in [
             'valueDialog',
-            'treeview',
+            'treeview', 'model=sorted_model',
             'fieldToEditCombo','newValueComboBoxEntry',
             'newValueEntry','changeValueButton',
             'deleteValueButton','forEachLabel',
@@ -83,6 +85,7 @@ class FieldEditor:
         col = Gtk.TreeViewColumn('Value',
                            renderer,
                            text=0)
+        col.set_sort_column_id(0)
         self.treeview.append_column(col)
         self.treeview.get_selection().connect('changed',self.treeViewSelectionChanged)
         self.treeview.get_selection().set_mode(Gtk.SelectionMode.MULTIPLE)

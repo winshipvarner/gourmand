@@ -669,12 +669,12 @@ class Language(AbstractLanguage):
              ("qt",     ["quart",      "quarts",     "qt.",  "Qt", "Qt."]),
              ("pt",     ["pint",       "pints",      "pt.",  "Pt", "Pt."]),
              ("gallon", ["gallon",     "gallons",    "gal",  "gal."]),
-             ("ml",     ["mililiter",  "mililiters", "ml",   "ml."]),
-             ("cl",     ["centiliter", "centiliters","cl",   "cl."]),
-             ("dl",     ["deciliter",  "deciliters", "dl",   "dl."]),
-             ("l",      ["liter",      "liters",     "lit.", "l", "l."]),
+             ("ml",     ["mililiter",  "mililiters", "milliliter", "milliliters", "millilitre", "millilitres", "ml", "ml."]),
+             ("cl",     ["centiliter", "centiliters","centilitre", "centilitres", "cl", "cl."]),
+             ("dl",     ["deciliter",  "deciliters", "decilitre", "deciilitres", "dl",   "dl."]),
+             ("l",      ["liter",      "liters",     "litre", "litres""lit.", "l", "l."]),
              ("g",      ["grams",    "gram",      "g.", "g", "gr", "gr."]),
-             ("mg",     ["miligram", "miligrams", "mg", "mg."]),
+             ("mg",     ["miligram", "miligrams", "millogram", "millograms", "mg", "mg."]),
              ("kg",     ["kilogram", "kilograms", "kg", "kg."]),
              # These names aren"t really convertible, but we want them to
              # be recognized as units.
