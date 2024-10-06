@@ -947,7 +947,7 @@ class PdfPrefGetter:
         self.page_drawer = PdfPageDrawer(yalign=0.0)
         self.in_ccb = False
         self.setup_widgets()
-        self.table.connect('changed',self.change_cb)
+        ret_value = self.table.connect('changed',self.change_cb)
         self.table.emit('changed')
         self.page_drawer.set_size_request(200,100)
         self.page_drawer.show()
@@ -961,8 +961,9 @@ class PdfPrefGetter:
         self.table = self.pd.table
 
     def run (self):
-        self.pd.run()
-        return self.get_args_from_opts(self.opts)
+        rt_val = self.pd.run()
+        if rt_val is not None:
+            return self.get_args_from_opts(self.opts)
 
     def get_args_from_opts(self, opts: Tuple[List]) -> Dict[str, Union[str, int, float]]:
         """Get information from the dialog.

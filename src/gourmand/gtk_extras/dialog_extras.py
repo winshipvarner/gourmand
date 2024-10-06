@@ -557,8 +557,9 @@ class PreferencesDialog(ModalDialog):
             Gtk.main_quit()
 
     def cancelcb(self, *args):
-        self.hide()
         self.ret = None
+        self.hide()
+        Gtk.main_quit()
 
 
 class BooleanDialog (MessageDialog):
@@ -1116,7 +1117,8 @@ class ImageSelectorDialog (FileSelectorDialog):
         ['PNG Image', ['image/png'], ['*.png', '*.PNG']],
         ['Bmp Image', ['image/bmp'], ['*.bmp', '*.BMP']],
         ['CGF Image', ['image/cgf'], ['*.cgf', '*.CFG']],
-        ['Tiff Image', ['image/tiff'], ['*.tiff', '*.TIFF']]
+        ['Tiff Image', ['image/tiff'], ['*.tiff', '*.TIFF']],
+        ['WebP Image', ['image/webp'], ['*.webp', '*.WEBP']]
     ]
 
     def __init__(self,

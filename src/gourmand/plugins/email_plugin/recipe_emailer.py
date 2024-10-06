@@ -22,10 +22,9 @@ class StringIOfaker (io.StringIO):
         io.StringIO.close(self)
 
 class RecipeEmailer (Emailer):
-    def __init__ (self, recipes, attachment_types=["pdf"], do_text=True):
+    def __init__ (self, recipes, attachment_types=["pdf", "grmt"], do_text=True):
         Emailer.__init__(self)
         self.attachments_left = self.attachment_types = list(attachment_types)
-        self.attached = []
         self.recipes = recipes
         self.rg = get_application()
         self.rd = self.rg.rd
@@ -48,13 +47,16 @@ class RecipeEmailer (Emailer):
         s.close_really()
 
     def write_attachments (self):
+        self.attachments = []
         em = ExportManager.instance()
-        for typ in self.attachment_types:
+        print("self.attachments_left: ",self.attachments_left)
+        for typ in self.attachments_left:
             name = _('Recipes')
             if len(self.recipes)==1:
                 name = self.recipes[0].title.replace(':','-').replace('\\','-').replace('/','-')
             fn = os.path.join(tempfile.gettempdir(),"%s.%s"%(name,typ))
             self.attachments.append(fn)
+            print("self.attachments: ",self.attachments)
             instance = em.do_multiple_export(self.recipes, fn)
             instance.connect('completed',self.attachment_complete,typ)
             print('Start thread to create ',typ,'!','->',fn)
@@ -62,7 +64,7 @@ class RecipeEmailer (Emailer):
     def attachment_complete (self, thread, typ):
         self.attachments_left.remove(typ)
         if not self.attachments_left:
-            print('Attachments complete! Send email!')
+            print('Attachments complete.')
             self.send_email()
 
     def send_email_with_attachments (self, emailaddress=None):
