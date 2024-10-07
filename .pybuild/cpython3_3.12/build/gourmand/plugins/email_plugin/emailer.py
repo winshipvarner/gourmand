@@ -1,4 +1,5 @@
 import subprocess
+import sys
 
 from gourmand.gdebug import debug
 
@@ -21,3 +22,4 @@ class Emailer:
             build_command.extend(['--attach', a])
         #print (''.join(str(build_command)))
         subprocess.run(build_command)
+

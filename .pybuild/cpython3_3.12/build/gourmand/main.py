@@ -491,7 +491,8 @@ class RecTrash (RecIndex):
                                   "_Delete permanently",self.RESPONSE_DELETE_PERMANENTLY,
                                   "_Undelete",self.RESPONSE_UNDELETE,
                                   Gtk.STOCK_CLOSE,Gtk.ResponseType.CLOSE))
-        self.window.set_default_response(Gtk.ResponseType.CLOSE)
+        #self.window.set_default_response(Gtk.ResponseType.CLOSE)
+        self.window.connect("delete-event", self.dismiss)
         box = Gtk.VBox()
         box.show()
         box.set_border_width(12)

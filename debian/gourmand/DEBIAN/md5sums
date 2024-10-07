@@ -100,8 +100,8 @@ b50618072bf7b9463477eb4a33ef8707  usr/lib/python3/dist-packages/gourmand/data/so
 416e924f10d07b83ce39b2eac4572477  usr/lib/python3/dist-packages/gourmand/defaults/abstractLang.py
 6d2e40f7a0239070417a64c509700175  usr/lib/python3/dist-packages/gourmand/defaults/defaults.py
 e188c44054d2083244b3ca30073a5d67  usr/lib/python3/dist-packages/gourmand/defaults/defaults_de.py
-d9663e1034436a09ba2bfc9ddf8ed8d0  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en.py
-292c08de408f512f38c9b4aceaef56e7  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en_GB.py
+bf7d7344c352f43553774d5e374d10da  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en.py
+d384483abd6777537ee4c04819ce9b06  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en_GB.py
 aebf1a3b2c65f2146718c864e90c5e5d  usr/lib/python3/dist-packages/gourmand/defaults/defaults_es.py
 c7608f1a719400af87617db418d20b4d  usr/lib/python3/dist-packages/gourmand/defaults/defaults_fr.py
 abcfb069fff444a7a16899a6cf0a5a41  usr/lib/python3/dist-packages/gourmand/defaults/defaults_nl.py
@@ -126,7 +126,7 @@ f3fdd9c252cdc4b74e0f9fea46bff25f  usr/lib/python3/dist-packages/gourmand/gtk_ext
 f144ae92680903a8a7a07d7bcd338cd1  usr/lib/python3/dist-packages/gourmand/gtk_extras/WidgetSaver.py
 285fb8ac1d610506afe1600a495bc2db  usr/lib/python3/dist-packages/gourmand/gtk_extras/__init__.py
 12fbb945e318f1672712e4fca8566524  usr/lib/python3/dist-packages/gourmand/gtk_extras/cb_extras.py
-7316447a7e9e513cae3749847ccda15c  usr/lib/python3/dist-packages/gourmand/gtk_extras/dialog_extras.py
+f597ffd606c2914067e7a61155dccd03  usr/lib/python3/dist-packages/gourmand/gtk_extras/dialog_extras.py
 202be8d4bc09b49cf7461051f6a5ae1a  usr/lib/python3/dist-packages/gourmand/gtk_extras/mnemonic_manager.py
 38efaa127e51b192d748768290af6647  usr/lib/python3/dist-packages/gourmand/gtk_extras/optionTable.py
 26268ae2c26e01221523cf19cd30ba96  usr/lib/python3/dist-packages/gourmand/gtk_extras/pageable_store.py
@@ -148,9 +148,9 @@ e72d5976000372196b3798eca54548f2  usr/lib/python3/dist-packages/gourmand/importe
 762300e34db9bc9ba1c06695629956f6  usr/lib/python3/dist-packages/gourmand/importers/web_importer.py
 92117aa08bdd2bedfb6d615bbd05148e  usr/lib/python3/dist-packages/gourmand/importers/xml_importer.py
 870712cbac726aa00af26d942eb0dd90  usr/lib/python3/dist-packages/gourmand/keymanager.py
-42f67cf6b1c0d6da186297a4ac37f37e  usr/lib/python3/dist-packages/gourmand/main.py
+9592e91be7199d0772a0d14a1272f76c  usr/lib/python3/dist-packages/gourmand/main.py
 60bf575520be2bb2e6a78b1ddc56f535  usr/lib/python3/dist-packages/gourmand/optionparser.py
-981ee7dcadee17a94d9e3da06be5bb14  usr/lib/python3/dist-packages/gourmand/plugin.py
+d746825bd53082ad60d6fd283c3b134f  usr/lib/python3/dist-packages/gourmand/plugin.py
 962c1a42aeab13b4e9d674030873dbc9  usr/lib/python3/dist-packages/gourmand/plugin_gui.py
 ed704c9ccf4590f2f9f1743887478228  usr/lib/python3/dist-packages/gourmand/plugin_loader.py
 18afe5263bcf03e7fa83b2e6ced339c8  usr/lib/python3/dist-packages/gourmand/plugins/browse_plugin.gourmet-plugin
@@ -174,12 +174,11 @@ cb228c929c0399e96432cac73e82163d  usr/lib/python3/dist-packages/gourmand/plugins
 42c3defd9a5d2fb33f4f573419ee6c51  usr/lib/python3/dist-packages/gourmand/plugins/duplicate_finder/recipeMerger.ui
 281ac32fd11ea22f8c7615c353b1b44c  usr/lib/python3/dist-packages/gourmand/plugins/duplicate_finder/recipeMergerPlugin.py
 447c234b39a66a092540574acdbcf18c  usr/lib/python3/dist-packages/gourmand/plugins/email.gourmet-plugin
-9da975e71e4d39e06cc1d19b9d2ccb88  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/__init__.py
-e3317dc852cb0e5d1fdb3daed60e0097  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/emailer.py
-6b2d379d9062150fab3db7cf06391d87  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/emailer_plugin.py
-a7795f53ef1801c6feec7690d47857a6  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/recipe_emailer.py
+f17cf66ea2d87c31120fa55c1998f6ad  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/__init__.py
+ded5a6a9445e86e738434acece0961c2  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/emailer.py
+09b152a714df6c7070b195e978ac002f  usr/lib/python3/dist-packages/gourmand/plugins/email_plugin/recipe_emailer.py
 d6df165ec6b821f711f9076e3b80f0fd  usr/lib/python3/dist-packages/gourmand/plugins/field_editor.gourmet-plugin
-dbfa20d4f127c706eabfbc0f57aa4e8d  usr/lib/python3/dist-packages/gourmand/plugins/field_editor/__init__.py
+b9f2d248f2abf0e09411df9c5852ae03  usr/lib/python3/dist-packages/gourmand/plugins/field_editor/__init__.py
 da2402b418a5683d6edf43ba69b3a962  usr/lib/python3/dist-packages/gourmand/plugins/field_editor/fieldEditor.py
 c6b3243d4601367d557e3756cee22f6b  usr/lib/python3/dist-packages/gourmand/plugins/import_export/epub.gourmet-plugin
 6179ded23bd29314ba5f49436d40b4b5  usr/lib/python3/dist-packages/gourmand/plugins/import_export/epub_plugin/__init__.py
@@ -220,7 +219,7 @@ eeb385a600a673d2c908f30d236b0623  usr/lib/python3/dist-packages/gourmand/plugins
 4cd22bae6b195f651541263cbd3719d8  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf.gourmet-plugin
 58cfab54f43e2a4442112487c51bb292  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf_plugin/__init__.py
 12ee62b706d75d9b6b99b9a6d28604a1  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf_plugin/page_drawer.py
-ca6b046c57354d19e62238f2d424b4ba  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py
+694bf3d2fba04d44583671126f876be3  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py
 81aaad285fafa5b4b428f7ba9095c052  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf_plugin/pdf_exporter_plugin.py
 a1c12ec7089347a872810f9be9e50b67  usr/lib/python3/dist-packages/gourmand/plugins/import_export/pdf_plugin/print_plugin.py
 1985cd6b9168de30b09b757e14306ac0  usr/lib/python3/dist-packages/gourmand/plugins/import_export/plaintext.gourmet-plugin
@@ -273,7 +272,7 @@ ee3d6000fcf7570fd66ac57be0aa8462  usr/lib/python3/dist-packages/gourmand/plugins
 07a26b5b77d2ba9ecf156ac86027a2a1  usr/lib/python3/dist-packages/gourmand/plugins/utf16.gourmet-plugin
 2d773aa142043f69a8be69bad3f1e603  usr/lib/python3/dist-packages/gourmand/prefs.py
 cc35db2d36258199a14f74d34d26ec80  usr/lib/python3/dist-packages/gourmand/prefsGui.py
-f427a39b0532079000aaa8ce8baad544  usr/lib/python3/dist-packages/gourmand/reccard.py
+9dfbdb0fc32594b2401b953fbdfb8ce2  usr/lib/python3/dist-packages/gourmand/reccard.py
 d5fe91db0b40e19a979e3134883b280b  usr/lib/python3/dist-packages/gourmand/recindex.py
 05e6968191e4a33de4c8962ed72acd5d  usr/lib/python3/dist-packages/gourmand/recipeIdentifier.py
 9d44279735827b34430e9d4fa4a84fa2  usr/lib/python3/dist-packages/gourmand/recipeManager.py
