@@ -583,7 +583,7 @@ class Language(AbstractLanguage):
              ("dl",     ["deciliter",  "deciliters", "decilitre", "deciilitres", "dl",   "dl."]),
              ("l",      ["liter",      "liters",     "litre", "litres""lit.", "l", "l."]),
              ("g",      ["grams",    "gram",      "g.", "g", "gr", "gr."]),
-             ("mg",     ["miligram", "miligrams", "millogram", "millograms", "mg", "mg."]),
+             ("mg",     ["miligram", "miligrams", "milligram", "milligrams", "mg", "mg."]),
              ("kg",     ["kilogram", "kilograms", "kg", "kg."]),
              # These names aren"t really convertible, but we want them to
              # be recognized as units.

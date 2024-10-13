@@ -37,7 +37,6 @@ src/gourmand/plugins/duplicate_finder/recipeMergerPlugin.py
 [type: gettext/glade]src/gourmand/plugins/duplicate_finder/recipeMerger.ui
 src/gourmand/plugins/field_editor/fieldEditor.py
 src/gourmand/plugins/field_editor/__init__.py
-src/gourmand/plugins/email_plugin/emailer_plugin.py
 src/gourmand/plugins/email_plugin/recipe_emailer.py
 src/gourmand/plugins/unit_converter/convertGui.py
 src/gourmand/plugins/unit_converter/__init__.py

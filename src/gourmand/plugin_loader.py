@@ -44,7 +44,6 @@ class MasterLoader:
         'html_plugin',
         'mastercook_import_plugin',
         'mealmaster_plugin',
-        #'archive_plugin',
         'pdf_plugin',
         'plaintext_plugin',
         'krecipe_plugin',

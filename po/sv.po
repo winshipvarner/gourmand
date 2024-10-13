@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gourmet Recipe Manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 10:46+0200\n"
+"POT-Creation-Date: 2024-10-12 13:23-0700\n"
 "PO-Revision-Date: 2022-08-15 17:26+0200\n"
 "Last-Translator: jens persson <jens@persson.cx>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -30,7 +30,7 @@ msgstr "Receptindex"
 msgid "_New Recipe"
 msgstr "_Nytt recept"
 
-#: ../src/gourmand/ui/app.ui.h:3 ../src/gourmand/gglobals.py:105
+#: ../src/gourmand/ui/app.ui.h:3 ../src/gourmand/gglobals.py:106
 msgid "Add to _Shopping List"
 msgstr "Lägg till i _inköpslistan"
 
@@ -82,8 +82,7 @@ msgid ""
 "<span size=\"large\" weight=\"bold\">Set Recipe Fields for selected recipes</"
 "span>"
 msgstr ""
-"<span size=\"large\" weight=\"bold\">Sätt receptfält för valda recept</"
-"span>"
+"<span size=\"large\" weight=\"bold\">Sätt receptfält för valda recept</span>"
 
 #: ../src/gourmand/ui/batchEditor.ui.h:3
 #: ../src/gourmand/ui/recCardDescriptionEditor.ui.h:3
@@ -202,7 +201,7 @@ msgid "Database _Name:"
 msgstr "Databas_namn:"
 
 #: ../src/gourmand/ui/databaseChooser.ui.h:13 ../src/gourmand/shopgui.py:669
-#: ../src/gourmand/main.py:1035
+#: ../src/gourmand/main.py:1044
 msgid "_File"
 msgstr "_Arkiv"
 
@@ -254,8 +253,8 @@ msgid "_Browse"
 msgstr "_Bläddra"
 
 #: ../src/gourmand/ui/databaseChooser.ui.h:22
-#: ../src/gourmand/gtk_extras/dialog_extras.py:853
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1288
+#: ../src/gourmand/gtk_extras/dialog_extras.py:854
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1290
 msgid "_Details"
 msgstr "_Detaljer"
 
@@ -368,7 +367,7 @@ msgid "Pre_paration Time:"
 msgstr "_Förberedelsetid:"
 
 #: ../src/gourmand/ui/recCardDescriptionEditor.ui.h:15
-#: ../src/gourmand/recindex.py:51 ../src/gourmand/recindex.py:58
+#: ../src/gourmand/recindex.py:52 ../src/gourmand/recindex.py:59
 msgid "category"
 msgstr "kategori"
 
@@ -403,54 +402,58 @@ msgid "<b>Preparation Time:</b>"
 msgstr "<b>Förberedelsetid:</b>"
 
 #: ../src/gourmand/ui/recCardDisplay.ui.h:5
+msgid "<b>Last Modified:</b>"
+msgstr ""
+
+#: ../src/gourmand/ui/recCardDisplay.ui.h:6
 msgid "<b>Cuisine:</b>"
 msgstr "<b>Matkultur:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:6
+#: ../src/gourmand/ui/recCardDisplay.ui.h:7
 msgid "<b>Category:</b>"
 msgstr "<b>Kategori:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:7
+#: ../src/gourmand/ui/recCardDisplay.ui.h:8
 msgid "<b>Webpage:</b>"
 msgstr "<b>Webbsida:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:8
+#: ../src/gourmand/ui/recCardDisplay.ui.h:9
 msgid "<b>_Yields:</b>"
 msgstr "<b>_Avkastning:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:9
+#: ../src/gourmand/ui/recCardDisplay.ui.h:10
 msgid "<span underline=\"single\" color=\"blue\">Link</span>"
 msgstr "<span underline=\"single\" color=\"blue\">Länk</span>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:10
+#: ../src/gourmand/ui/recCardDisplay.ui.h:11
 msgid "<b>Source:</b>"
 msgstr "<b>Källa:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:11
+#: ../src/gourmand/ui/recCardDisplay.ui.h:12
 msgid "<b>Rating:</b>"
 msgstr "<b>Betyg:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:12
+#: ../src/gourmand/ui/recCardDisplay.ui.h:13
 msgid "<b>_Multiply by:</b>"
 msgstr "<b>_Multiplicera med:</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:13
+#: ../src/gourmand/ui/recCardDisplay.ui.h:14
 msgid "<b>Instructions</b>"
 msgstr "<b>Instruktioner</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:14
+#: ../src/gourmand/ui/recCardDisplay.ui.h:15
 msgid "Edit _instructions"
 msgstr "Redigera i_nstruktioner"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:15
+#: ../src/gourmand/ui/recCardDisplay.ui.h:16
 msgid "<b>Notes</b>"
 msgstr "<b>Anteckningar</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:16
+#: ../src/gourmand/ui/recCardDisplay.ui.h:17
 msgid "Edit _notes"
 msgstr "Redigera _anteckningar"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:17
+#: ../src/gourmand/ui/recCardDisplay.ui.h:18
 #: ../src/gourmand/plugins/duplicate_finder/recipeMerger.py:482
 #: ../src/gourmand/plugins/import_export/html_plugin/html_exporter.py:77
 #: ../src/gourmand/plugins/import_export/epub_plugin/epub_exporter.py:171
@@ -458,11 +461,11 @@ msgstr "Redigera _anteckningar"
 msgid "Recipe"
 msgstr "Recept"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:18
+#: ../src/gourmand/ui/recCardDisplay.ui.h:19
 msgid "<b>Ingredients</b>"
 msgstr "<b>Ingredienser</b>"
 
-#: ../src/gourmand/ui/recCardDisplay.ui.h:19
+#: ../src/gourmand/ui/recCardDisplay.ui.h:20
 msgid "Edit _ingredients"
 msgstr "Redigera _ingredienser"
 
@@ -471,7 +474,7 @@ msgid "Add _ingredient:"
 msgstr "Lägg _till ingrediens:"
 
 #: ../src/gourmand/ui/recCardIngredientsEditor.ui.h:2
-#: ../src/gourmand/reccard.py:1070
+#: ../src/gourmand/reccard.py:1082
 #: ../src/gourmand/plugins/duplicate_finder/recipeMerger.py:477
 #: ../src/gourmand/plugins/duplicate_finder/recipeMerger.py:479
 #: ../src/gourmand/plugins/duplicate_finder/recipeMerger.py:507
@@ -501,7 +504,7 @@ msgid "Delete selected recipe"
 msgstr "Radera valt recept"
 
 #. saveEdits
-#: ../src/gourmand/ui/recipe_index.ui.h:6 ../src/gourmand/reccard.py:871
+#: ../src/gourmand/ui/recipe_index.ui.h:6 ../src/gourmand/reccard.py:883
 msgid "_Delete Recipe"
 msgstr "_Ta bort recept"
 
@@ -573,8 +576,8 @@ msgstr "Kategori"
 #. None,
 #. ()),
 #. }
-#: ../src/gourmand/ui/shopCatEditor.ui.h:2 ../src/gourmand/reccard.py:2138
-#: ../src/gourmand/reccard.py:2198
+#: ../src/gourmand/ui/shopCatEditor.ui.h:2 ../src/gourmand/reccard.py:2154
+#: ../src/gourmand/reccard.py:2214
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:510
 #: ../src/gourmand/plugins/key_editor/recipeEditorPlugin.py:116
 #: ../src/gourmand/plugins/nutritional_information/nutritionInfoEditor.py:192
@@ -589,7 +592,7 @@ msgstr "Kategoriredigerare"
 msgid "Search by"
 msgstr "Sök i"
 
-#: ../src/gourmand/ui/shopCatEditor.ui.h:7 ../src/gourmand/recindex.py:107
+#: ../src/gourmand/ui/shopCatEditor.ui.h:7 ../src/gourmand/recindex.py:108
 msgid "Search as you type"
 msgstr "Sök medan du skriver"
 
@@ -845,7 +848,6 @@ msgid "I_gnore"
 msgstr "I_gnorera"
 
 #: ../src/gourmand/__version__.py:3
-#| msgid "Gourmet Recipe Manager"
 msgid "Gourmand Recipe Manager"
 msgstr "Gourmand Recepthanterare"
 
@@ -895,24 +897,24 @@ msgstr "Kati Pregartner (Startskärmsbild)"
 msgid "Choose Database File"
 msgstr "Välj databas fil"
 
-#: ../src/gourmand/backends/db.py:1472 ../src/gourmand/reccard.py:942
+#: ../src/gourmand/backends/db.py:1491 ../src/gourmand/reccard.py:954
 #: ../src/gourmand/importers/interactive_importer.py:100
 msgid "New Recipe"
 msgstr "Nytt recept"
 
-#: ../src/gourmand/backends/db.py:2120 ../src/gourmand/backends/db.py:2121
+#: ../src/gourmand/backends/db.py:2139 ../src/gourmand/backends/db.py:2140
 msgid "Database Backup"
 msgstr "Databas backup"
 
-#: ../src/gourmand/backends/db.py:2122
+#: ../src/gourmand/backends/db.py:2141
 msgid "Depending on the size of your database, this may take some time."
 msgstr "Beroende på databasstorleken så kan detta ta lång tid."
 
-#: ../src/gourmand/backends/db.py:2123 ../src/gourmand/threadManager.py:351
+#: ../src/gourmand/backends/db.py:2142 ../src/gourmand/threadManager.py:351
 msgid "Details"
 msgstr "Detaljer"
 
-#: ../src/gourmand/backends/db.py:2124
+#: ../src/gourmand/backends/db.py:2143
 #, python-format
 msgid ""
 "A backup will be made as %s in case something goes wrong. If this upgrade "
@@ -970,7 +972,7 @@ msgstr "Flytta från inköpslistan"
 msgid "Move selected items into %s"
 msgstr "Flytta valda artiklar till %s"
 
-#: ../src/gourmand/shopgui.py:209 ../src/gourmand/main.py:1050
+#: ../src/gourmand/shopgui.py:209 ../src/gourmand/main.py:1059
 msgid "_Shopping List"
 msgstr "_Inköpslista"
 
@@ -1007,15 +1009,15 @@ msgstr "Ta bort recept"
 msgid "Remove recipes from shopping list"
 msgstr "Ta bort recept från inköpslista"
 
-#: ../src/gourmand/shopgui.py:647 ../src/gourmand/reccard.py:227
-#: ../src/gourmand/reccard.py:866 ../src/gourmand/main.py:1048
+#: ../src/gourmand/shopgui.py:647 ../src/gourmand/reccard.py:228
+#: ../src/gourmand/reccard.py:878 ../src/gourmand/main.py:1057
 msgid "_Edit"
 msgstr "Re_digera"
 
 #: ../src/gourmand/shopgui.py:670 ../src/gourmand/shopgui.py:673
-#: ../src/gourmand/reccard.py:229 ../src/gourmand/reccard.py:240
-#: ../src/gourmand/reccard.py:868 ../src/gourmand/main.py:1062
-#: ../src/gourmand/main.py:1065
+#: ../src/gourmand/reccard.py:230 ../src/gourmand/reccard.py:241
+#: ../src/gourmand/reccard.py:880 ../src/gourmand/main.py:1071
+#: ../src/gourmand/main.py:1074
 msgid "_Help"
 msgstr "_Hjälp"
 
@@ -1052,56 +1054,56 @@ msgstr ""
 "inköpslista."
 
 #. menus
-#: ../src/gourmand/reccard.py:226 ../src/gourmand/reccard.py:865
+#: ../src/gourmand/reccard.py:227 ../src/gourmand/reccard.py:877
 msgid "_Recipe"
 msgstr "_Recept"
 
-#: ../src/gourmand/reccard.py:228 ../src/gourmand/main.py:212
+#: ../src/gourmand/reccard.py:229 ../src/gourmand/main.py:213
 msgid "_Go"
 msgstr "_Visa"
 
-#: ../src/gourmand/reccard.py:230
+#: ../src/gourmand/reccard.py:231
 msgid "Export recipe"
 msgstr "Exportera receptet"
 
-#: ../src/gourmand/reccard.py:231
+#: ../src/gourmand/reccard.py:232
 msgid "Export selected recipe (save to file)"
 msgstr "Exportera valda receptet (spara till fil)"
 
-#: ../src/gourmand/reccard.py:233
+#: ../src/gourmand/reccard.py:234
 msgid "_Delete recipe"
 msgstr "Ra_dera recept"
 
-#: ../src/gourmand/reccard.py:234
+#: ../src/gourmand/reccard.py:235
 msgid "Delete this recipe"
 msgstr "Radera det här receptet"
 
-#: ../src/gourmand/reccard.py:248
+#: ../src/gourmand/reccard.py:249
 msgid "Adjust units when multiplying"
 msgstr "Justera enheter vid mångfaldigande"
 
-#: ../src/gourmand/reccard.py:250
+#: ../src/gourmand/reccard.py:251
 msgid ""
 "Change units to make them more readable where possible when multiplying."
 msgstr "Ändra på enheter för att göra dem mer läsbara vid mångfaldigande."
 
-#: ../src/gourmand/reccard.py:256
+#: ../src/gourmand/reccard.py:257
 msgid "Copy to clipboard"
 msgstr "Kopiera till urklipp"
 
-#: ../src/gourmand/reccard.py:258
+#: ../src/gourmand/reccard.py:259
 msgid "Print recipe"
 msgstr "Skriv ut recept"
 
-#: ../src/gourmand/reccard.py:260 ../src/gourmand/main.py:1029
+#: ../src/gourmand/reccard.py:261 ../src/gourmand/main.py:1038
 msgid "Add to Shopping List"
 msgstr "Lägg till på inköpslistan"
 
-#: ../src/gourmand/reccard.py:262
+#: ../src/gourmand/reccard.py:263
 msgid "Forget remembered optional ingredients"
 msgstr "Rensa lagrade valfria ingredienser"
 
-#: ../src/gourmand/reccard.py:263
+#: ../src/gourmand/reccard.py:264
 msgid ""
 "Before adding to shopping list, ask about all optional ingredients, even "
 "ones you previously wanted remembered"
@@ -1109,142 +1111,142 @@ msgstr ""
 "Innan produkten läggs till på inköpslistan, fråga om alla valfria "
 "ingredienser, även de som tidigare lagrats"
 
-#: ../src/gourmand/reccard.py:265
+#: ../src/gourmand/reccard.py:266
 msgid "Export Recipe"
 msgstr "Exportera recept"
 
-#: ../src/gourmand/reccard.py:551
+#: ../src/gourmand/reccard.py:563
 #, python-format
 msgid "Recipe successfully exported to <a href=\"file:///%s\">%s</a>"
 msgstr "Receptet exorterades till <a href=\"file:///%s\">%s</a>"
 
-#: ../src/gourmand/reccard.py:575 ../src/gourmand/reccard.py:588
+#: ../src/gourmand/reccard.py:587 ../src/gourmand/reccard.py:600
 msgid "You have unsaved changes."
 msgstr "Du har osparade ändringar."
 
-#: ../src/gourmand/reccard.py:576
+#: ../src/gourmand/reccard.py:588
 msgid "Save changes before copying?"
 msgstr "Spara ändringar innan kopiering?"
 
-#: ../src/gourmand/reccard.py:589
+#: ../src/gourmand/reccard.py:601
 msgid "Save changes before printing?"
 msgstr "Spara ändringar innan utskrift?"
 
-#: ../src/gourmand/reccard.py:701 ../src/gourmand/recipeIdentifier.py:101
+#: ../src/gourmand/reccard.py:713 ../src/gourmand/recipeIdentifier.py:101
 msgid "(Optional)"
 msgstr "(alternativ)"
 
-#: ../src/gourmand/reccard.py:753
+#: ../src/gourmand/reccard.py:765
 #, python-format
 msgid "Unable to find recipe %s in database."
 msgstr "Kan inte hitta recept %s i databasen."
 
-#: ../src/gourmand/reccard.py:849
+#: ../src/gourmand/reccard.py:861
 msgid "Edit Recipe:"
 msgstr "Redigera recept:"
 
-#: ../src/gourmand/reccard.py:870
+#: ../src/gourmand/reccard.py:882
 msgid "Save edits to database"
 msgstr "Spara ändrigar till databas"
 
 #. show_pref_dialog
-#: ../src/gourmand/reccard.py:879
+#: ../src/gourmand/reccard.py:891
 msgid "View Recipe Card"
 msgstr "Visa receptkort"
 
-#: ../src/gourmand/reccard.py:942
+#: ../src/gourmand/reccard.py:954
 msgid "Edit"
 msgstr "Ändra"
 
-#: ../src/gourmand/reccard.py:1040 ../src/gourmand/reccard.py:1041
+#: ../src/gourmand/reccard.py:1052 ../src/gourmand/reccard.py:1053
 #, python-format
 msgid "Save changes to %s"
 msgstr "Spara ändringar till %s"
 
-#: ../src/gourmand/reccard.py:1131
+#: ../src/gourmand/reccard.py:1143
 msgid "Add ingredient"
 msgstr "Lägg ingrediens"
 
-#: ../src/gourmand/reccard.py:1136
+#: ../src/gourmand/reccard.py:1148
 msgid "Add group"
 msgstr "Lägg till grupp"
 
-#: ../src/gourmand/reccard.py:1138
+#: ../src/gourmand/reccard.py:1150
 msgid "Add _recipe"
 msgstr "Lägg till _recept"
 
-#: ../src/gourmand/reccard.py:1139
+#: ../src/gourmand/reccard.py:1151
 msgid "Add another recipe as an ingredient in this recipe"
 msgstr "Lägg ett annat recept som ingrediens i detta recept"
 
-#: ../src/gourmand/reccard.py:1144
+#: ../src/gourmand/reccard.py:1156
 msgid "Delete"
 msgstr "Radera"
 
-#: ../src/gourmand/reccard.py:1150
+#: ../src/gourmand/reccard.py:1162
 msgid "Up"
 msgstr "Upp"
 
-#: ../src/gourmand/reccard.py:1152
+#: ../src/gourmand/reccard.py:1164
 msgid "Down"
 msgstr "Ner"
 
-#: ../src/gourmand/reccard.py:1308
+#: ../src/gourmand/reccard.py:1320
 #: ../src/gourmand/importers/interactive_importer.py:53
 msgid "Description"
 msgstr "Beskrivning"
 
-#: ../src/gourmand/reccard.py:1656 ../src/gourmand/gglobals.py:42
-#: ../src/gourmand/gglobals.py:47
+#: ../src/gourmand/reccard.py:1670 ../src/gourmand/gglobals.py:43
+#: ../src/gourmand/gglobals.py:48
 msgid "Instructions"
 msgstr "Instruktioner"
 
-#: ../src/gourmand/reccard.py:1662 ../src/gourmand/gglobals.py:43
-#: ../src/gourmand/gglobals.py:48
+#: ../src/gourmand/reccard.py:1676 ../src/gourmand/gglobals.py:44
+#: ../src/gourmand/gglobals.py:49
 msgid "Notes"
 msgstr "Kommentarer"
 
-#: ../src/gourmand/reccard.py:2135 ../src/gourmand/reccard.py:2165
+#: ../src/gourmand/reccard.py:2151 ../src/gourmand/reccard.py:2181
 msgid "Amt"
 msgstr "Mängd"
 
-#: ../src/gourmand/reccard.py:2136 ../src/gourmand/reccard.py:2166
+#: ../src/gourmand/reccard.py:2152 ../src/gourmand/reccard.py:2182
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:512
 #: ../src/gourmand/plugins/nutritional_information/nutritionModel.py:10
 msgid "Unit"
 msgstr "Enhet"
 
-#: ../src/gourmand/reccard.py:2137 ../src/gourmand/reccard.py:2167
+#: ../src/gourmand/reccard.py:2153 ../src/gourmand/reccard.py:2183
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:511
 #: ../src/gourmand/plugins/key_editor/recipeEditorPlugin.py:108
 #: ../src/gourmand/plugins/nutritional_information/nutritionInfoEditor.py:193
 msgid "Item"
 msgstr "Produkt"
 
-#: ../src/gourmand/reccard.py:2139 ../src/gourmand/reccard.py:2168
+#: ../src/gourmand/reccard.py:2155 ../src/gourmand/reccard.py:2184
 msgid "Optional"
 msgstr "Valbar"
 
-#: ../src/gourmand/reccard.py:2280
+#: ../src/gourmand/reccard.py:2296
 #, python-format
 msgid "The recipe %s (ID %s) is not in our database."
 msgstr "Receptet %s (ID %s) finns inte i vår databas."
 
-#: ../src/gourmand/reccard.py:2598
+#: ../src/gourmand/reccard.py:2614
 #, python-format
 msgid "Converted: %(amt)s %(unit)s"
 msgstr "Omvandlat: %(amt)s %(unit)s"
 
-#: ../src/gourmand/reccard.py:2600
+#: ../src/gourmand/reccard.py:2616
 #, python-format
 msgid "Not Converted: %(amt)s %(unit)s"
 msgstr "Ej konverterat: %(amt)s %(unit)s"
 
-#: ../src/gourmand/reccard.py:2604
+#: ../src/gourmand/reccard.py:2620
 msgid "Changed unit."
 msgstr "Ändrade enhet."
 
-#: ../src/gourmand/reccard.py:2605
+#: ../src/gourmand/reccard.py:2621
 #, python-format
 msgid ""
 "You have changed the unit for %(item)s from %(old)s to %(new)s. Would you "
@@ -1253,54 +1255,53 @@ msgstr ""
 "Du har bytt enhet för %(item)s från %(old)s till %(new)s. Vill du att "
 "mängden skall konverteras också?"
 
-#: ../src/gourmand/reccard.py:2616
+#: ../src/gourmand/reccard.py:2632
 #, python-format
 msgid "Converted %(old_amt)s %(old_unit)s to %(new_amt)s %(new_unit)s"
 msgstr "Konverterade %(old_amt)s %(old_unit)s till %(new_amt)s %(new_unit)s"
 
-#: ../src/gourmand/reccard.py:2628
+#: ../src/gourmand/reccard.py:2644
 #, python-format
 msgid "Unable to convert from %(old_unit)s to %(new_unit)s"
 msgstr "Kunde inte konvertera från %(old_unit)s till %(new_unit)s"
 
-#: ../src/gourmand/reccard.py:2683
+#: ../src/gourmand/reccard.py:2699
 msgid "Adding Ingredient Group"
 msgstr "Lägger till ingrediensgrupp"
 
-#: ../src/gourmand/reccard.py:2684
+#: ../src/gourmand/reccard.py:2700
 msgid "Enter a name for new subgroup of ingredients"
 msgstr "Ge ett namn åt denna undergrupp av ingredienser"
 
-#: ../src/gourmand/reccard.py:2685
+#: ../src/gourmand/reccard.py:2701
 msgid "Name of group:"
 msgstr "Namn på grupp:"
 
-#: ../src/gourmand/reccard.py:2948
+#: ../src/gourmand/reccard.py:2964
 msgid "Choose recipe"
 msgstr "Välj recept"
 
-#: ../src/gourmand/reccard.py:2985
+#: ../src/gourmand/reccard.py:3002
 msgid "Recipe cannot call itself as an ingredient!"
 msgstr "Recept kan inte räknas som ingrediens!"
 
-#: ../src/gourmand/reccard.py:2986 ../src/gourmand/shopping.py:298
+#: ../src/gourmand/reccard.py:3003 ../src/gourmand/shopping.py:298
 msgid "Infinite recursion is not allowed in recipes!"
 msgstr "Oändliga rekursioner är inte tillåtna i recept!"
 
-#: ../src/gourmand/reccard.py:3004
+#: ../src/gourmand/reccard.py:3021
 msgid "You haven't selected any recipes!"
 msgstr "Du har inte valt något recept!"
 
-#: ../src/gourmand/reccard.py:3016
+#: ../src/gourmand/reccard.py:3033
 #, python-format
 msgid "How much of %(title)s does your recipe call for?"
 msgstr "Hur mycket av %(title)s kräver ditt recept?"
 
-#: ../src/gourmand/reccard.py:3026
+#: ../src/gourmand/reccard.py:3043
 #: ../src/gourmand/plugins/key_editor/keyEditor.py:116
-#: ../src/gourmand/plugins/email_plugin/recipe_emailer.py:32
-#: ../src/gourmand/plugins/email_plugin/recipe_emailer.py:51
-#: ../src/gourmand/exporters/recipe_emailer.py:65
+#: ../src/gourmand/plugins/email_plugin/recipe_emailer.py:33
+#: ../src/gourmand/plugins/email_plugin/recipe_emailer.py:54
 msgid "Recipes"
 msgstr "Recept"
 
@@ -1353,7 +1354,7 @@ msgstr "Deaktivera ändå"
 msgid "Keep plugin active"
 msgstr "Behåll tillägget aktivt"
 
-#: ../src/gourmand/plugin_gui.py:144 ../src/gourmand/recindex.py:463
+#: ../src/gourmand/plugin_gui.py:144 ../src/gourmand/recindex.py:464
 msgid "or"
 msgstr "eller"
 
@@ -1390,7 +1391,11 @@ msgstr "Förberedelsetid"
 msgid "Cooking Time"
 msgstr "Tillagningstid"
 
-#: ../src/gourmand/gglobals.py:49
+#: ../src/gourmand/gglobals.py:38
+msgid "Last Modified"
+msgstr ""
+
+#: ../src/gourmand/gglobals.py:50
 msgid "Modifications"
 msgstr "Ändringar"
 
@@ -1417,65 +1422,65 @@ msgid "_Stop"
 msgstr "_Stoppa"
 
 #: ../src/gourmand/gtk_extras/dialog_extras.py:508
-#: ../src/gourmand/gtk_extras/dialog_extras.py:602
+#: ../src/gourmand/gtk_extras/dialog_extras.py:603
 msgid "Don't ask me this again."
 msgstr "Fråga mig inte igen."
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:565
+#: ../src/gourmand/gtk_extras/dialog_extras.py:566
 msgid "Do you really want to do this"
 msgstr "Vill du verkligen göra detta"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:786
-#: ../src/gourmand/importers/importer.py:496
+#: ../src/gourmand/gtk_extras/dialog_extras.py:787
+#: ../src/gourmand/importers/importer.py:497
 msgid "excellent"
 msgstr "suverän"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:787
-#: ../src/gourmand/importers/importer.py:497
+#: ../src/gourmand/gtk_extras/dialog_extras.py:788
+#: ../src/gourmand/importers/importer.py:498
 msgid "great"
 msgstr "kanon"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:788
-#: ../src/gourmand/importers/importer.py:498
+#: ../src/gourmand/gtk_extras/dialog_extras.py:789
+#: ../src/gourmand/importers/importer.py:499
 msgid "good"
 msgstr "bra"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:789
-#: ../src/gourmand/importers/importer.py:499
+#: ../src/gourmand/gtk_extras/dialog_extras.py:790
+#: ../src/gourmand/importers/importer.py:500
 msgid "fair"
 msgstr "skaplig"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:790
-#: ../src/gourmand/importers/importer.py:501
+#: ../src/gourmand/gtk_extras/dialog_extras.py:791
+#: ../src/gourmand/importers/importer.py:502
 msgid "poor"
 msgstr "dålig"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:802
+#: ../src/gourmand/gtk_extras/dialog_extras.py:803
 msgid "Convert ratings to 5 star scale."
 msgstr "Konvertera bedömning till 5 stjärnors skala."
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:803
+#: ../src/gourmand/gtk_extras/dialog_extras.py:804
 msgid "Convert ratings."
 msgstr "Omvandla graderingar."
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:805
+#: ../src/gourmand/gtk_extras/dialog_extras.py:806
 msgid "Please give each of the ratings an equivalent on a scale of 1 to 5"
 msgstr ""
 "Var god och ange varje gradering en motsvarighet på en skala från 1 till 5"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:819
+#: ../src/gourmand/gtk_extras/dialog_extras.py:820
 msgid "Current Rating"
 msgstr "Nuvarande gradering"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:824
+#: ../src/gourmand/gtk_extras/dialog_extras.py:825
 msgid "Rating out of 5 Stars"
 msgstr "Gradering av 5 stjärnor"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1226
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1228
 msgid "Select File(s)"
 msgstr "Välj fil(er)"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1284
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1286
 #, python-format
 msgid ""
 "I'm sorry, I can't understand\n"
@@ -1484,14 +1489,14 @@ msgstr ""
 "Jag är ledsen, jag kan inte förstå\n"
 "mängden \"%s\"."
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1287
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1289
 msgid ""
 "Amounts must be numbers (fractions or decimals), ranges of numbers, or blank."
 msgstr ""
 "Mängder måste vara nummer (bråk- eller decimaltal), ett nummerområdet (tex. "
 "1-5) eller tomt."
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1289
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1291
 msgid ""
 "\n"
 "The \"unit\" must be in the \"unit\" field by itself.\n"
@@ -1511,11 +1516,11 @@ msgstr ""
 "För att skriva in en rad numror, använd ett \"-\" för att skilja dem åt.\n"
 "Till exempel, kan du skriva in 2-4 eller 1 1/2 - 3 1/2.\n"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1304
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1306
 msgid "Username"
 msgstr "Användarnamn"
 
-#: ../src/gourmand/gtk_extras/dialog_extras.py:1304
+#: ../src/gourmand/gtk_extras/dialog_extras.py:1306
 msgid "Password"
 msgstr "Lösenord"
 
@@ -1599,23 +1604,23 @@ msgstr ""
 msgid "See _file with encoding"
 msgstr "Se _fil med teckenkodning"
 
-#: ../src/gourmand/main.py:112
+#: ../src/gourmand/main.py:113
 msgid "Import paused"
 msgstr "Import pausad"
 
-#: ../src/gourmand/main.py:113
+#: ../src/gourmand/main.py:114
 msgid "Stop import"
 msgstr "Stoppa import"
 
-#: ../src/gourmand/main.py:192 ../src/gourmand/main.py:1077
+#: ../src/gourmand/main.py:193 ../src/gourmand/main.py:1086
 msgid "Recipe _Index"
 msgstr "Recept_index"
 
-#: ../src/gourmand/main.py:193
+#: ../src/gourmand/main.py:194
 msgid "Shopping _List"
 msgstr "Inköps_lista"
 
-#: ../src/gourmand/main.py:340
+#: ../src/gourmand/main.py:341
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
@@ -1637,271 +1642,271 @@ msgstr ""
 "  boxar https://launchpad.net/~martin-boxar\n"
 "  jens persson https://github.com/MrShark"
 
-#: ../src/gourmand/main.py:391
+#: ../src/gourmand/main.py:392
 msgid "Saved!"
 msgstr "Sparad!"
 
-#: ../src/gourmand/main.py:402
+#: ../src/gourmand/main.py:403
 #, python-format
 msgid "Save your edits to %s"
 msgstr "Spara dina ändringar till %s"
 
-#: ../src/gourmand/main.py:413
+#: ../src/gourmand/main.py:414
 msgid "An import is in progress."
 msgstr "Import pågår."
 
-#: ../src/gourmand/main.py:414
+#: ../src/gourmand/main.py:415
 msgid "An export is in progress."
 msgstr "En exportering pågår."
 
-#: ../src/gourmand/main.py:415
+#: ../src/gourmand/main.py:416
 msgid "A delete is in progress."
 msgstr "Radering pågår."
 
-#: ../src/gourmand/main.py:417
+#: ../src/gourmand/main.py:418
 msgid "Exit program anyway?"
 msgstr "Avsluta programmet i alla fall?"
 
-#: ../src/gourmand/main.py:419
+#: ../src/gourmand/main.py:420
 msgid "Don't exit!"
 msgstr "Avsluta inte!"
 
-#: ../src/gourmand/main.py:465
+#: ../src/gourmand/main.py:466
 #, python-format
 msgid "Permanently deleted %s of %s recipes"
 msgstr "Permanent raderat %s av %s recept"
 
-#: ../src/gourmand/main.py:486 ../src/gourmand/main.py:501
+#: ../src/gourmand/main.py:487 ../src/gourmand/main.py:503
 msgid "Trash"
 msgstr "Papperskorg"
 
-#: ../src/gourmand/main.py:502
+#: ../src/gourmand/main.py:504
 msgid "Browse, permanently delete or undelete deleted recipes"
 msgstr "Bläddra, permanent radera eller återställa raderade recept"
 
-#: ../src/gourmand/main.py:556
+#: ../src/gourmand/main.py:558
 msgid "Undeleted recipes "
 msgstr "Återställer recept "
 
-#: ../src/gourmand/main.py:695
+#: ../src/gourmand/main.py:698
 #, python-format
 msgid "Number of %(unit)s of %(title)s to shop for"
 msgstr "Antal %(unit)s av %(title)s att köpa"
 
-#: ../src/gourmand/main.py:707
+#: ../src/gourmand/main.py:710
 #, python-format
 msgid "Multiply %s by:"
 msgstr "Multiplicera %s med:"
 
-#: ../src/gourmand/main.py:740
+#: ../src/gourmand/main.py:743
 #, python-format
 msgid "Set %(attributes)s for %(num)s selected recipe?"
 msgid_plural "Set %(attributes)s for %(num)s selected recipes?"
 msgstr[0] "Sätt %(attributes)s för %(num)s valt recept?"
 msgstr[1] "Sätt %(attributes)s för %(num)s valda recept?"
 
-#: ../src/gourmand/main.py:747
+#: ../src/gourmand/main.py:750
 msgid "Any previously existing values will not be changed."
 msgstr "Inga tidigare existerande värden kommer att ändras."
 
-#: ../src/gourmand/main.py:749
+#: ../src/gourmand/main.py:752
 msgid "The new values will overwrite any previously existing values."
 msgstr "De nya värdena kommer att skriva över alla tidigare värden."
 
-#: ../src/gourmand/main.py:750
+#: ../src/gourmand/main.py:753
 msgid "This change cannot be undone."
 msgstr "Denna förändring kan inte ångras."
 
-#: ../src/gourmand/main.py:751
+#: ../src/gourmand/main.py:754
 msgid "Set values for selected recipes"
 msgstr "Ställ in värden för utvalda recept"
 
-#: ../src/gourmand/main.py:980
+#: ../src/gourmand/main.py:989
 msgid "Search recipes"
 msgstr "Sök recept"
 
-#: ../src/gourmand/main.py:1013
+#: ../src/gourmand/main.py:1022
 msgid "Open recipe"
 msgstr "Öppna receptet"
 
-#: ../src/gourmand/main.py:1014
+#: ../src/gourmand/main.py:1023
 msgid "Open selected recipe"
 msgstr "Öppna valt recept"
 
-#: ../src/gourmand/main.py:1015
+#: ../src/gourmand/main.py:1024
 msgid "Delete recipe"
 msgstr "Radera receptet"
 
-#: ../src/gourmand/main.py:1016
+#: ../src/gourmand/main.py:1025
 msgid "Delete selected recipes"
 msgstr "Ta bort markerade recept"
 
-#: ../src/gourmand/main.py:1017
+#: ../src/gourmand/main.py:1026
 msgid "Edit recipe"
 msgstr "Ändra receptet"
 
-#: ../src/gourmand/main.py:1018
+#: ../src/gourmand/main.py:1027
 msgid "Open selected recipes in recipe editor view"
 msgstr "Öppna utvalda recept i receptet redigeringsvyn"
 
-#: ../src/gourmand/main.py:1020
+#: ../src/gourmand/main.py:1029
 msgid "E_xport selected recipes"
 msgstr "E_xportera valda recept"
 
-#: ../src/gourmand/main.py:1021
+#: ../src/gourmand/main.py:1030
 msgid "Export selected recipes to file"
 msgstr "Exportera valda recept till fil"
 
-#: ../src/gourmand/main.py:1023
+#: ../src/gourmand/main.py:1032
 msgid "_Print"
 msgstr "_Skriv ut"
 
-#: ../src/gourmand/main.py:1025
+#: ../src/gourmand/main.py:1034
 msgid "_Copy recipes"
 msgstr "_Kopiera recept"
 
-#: ../src/gourmand/main.py:1027
+#: ../src/gourmand/main.py:1036
 msgid "Batch _edit recipes"
 msgstr "_Batchredigera recept"
 
-#: ../src/gourmand/main.py:1036
+#: ../src/gourmand/main.py:1045
 msgid "_New"
 msgstr "_Ny"
 
-#: ../src/gourmand/main.py:1038
+#: ../src/gourmand/main.py:1047
 msgid "_Import Recipe"
 msgstr "_Importera recept"
 
-#: ../src/gourmand/main.py:1039
+#: ../src/gourmand/main.py:1048
 msgid "Import recipe from file or page"
 msgstr "Importera recept från fil eller sida"
 
-#: ../src/gourmand/main.py:1040
+#: ../src/gourmand/main.py:1049
 msgid "Paste recipe"
 msgstr "Klistra in recept"
 
-#: ../src/gourmand/main.py:1042
+#: ../src/gourmand/main.py:1051
 msgid "Export _all recipes"
 msgstr "Exportera _alla recept"
 
-#: ../src/gourmand/main.py:1043
+#: ../src/gourmand/main.py:1052
 msgid "Export all recipes to file"
 msgstr "Exportera alla recept till fil"
 
-#: ../src/gourmand/main.py:1044
+#: ../src/gourmand/main.py:1053
 msgid "_Quit"
 msgstr "_Avsluta"
 
-#: ../src/gourmand/main.py:1047
+#: ../src/gourmand/main.py:1056
 msgid "_Actions"
 msgstr "_Åtgärder"
 
-#: ../src/gourmand/main.py:1052
+#: ../src/gourmand/main.py:1061
 msgid "_Trash"
 msgstr "_Papperskorg"
 
-#: ../src/gourmand/main.py:1055
+#: ../src/gourmand/main.py:1064
 msgid "_Preferences"
 msgstr "_Inställningar"
 
-#: ../src/gourmand/main.py:1057
+#: ../src/gourmand/main.py:1066
 msgid "_Plugins"
 msgstr "_Tillägg"
 
-#: ../src/gourmand/main.py:1058
+#: ../src/gourmand/main.py:1067
 msgid "Manage plugins which add extra functionality to Gourmand."
 msgstr "Hantera tillägg som ger extra funktioner för Gourmand."
 
-#: ../src/gourmand/main.py:1060
+#: ../src/gourmand/main.py:1069
 msgid "Setti_ngs"
 msgstr "I_nställningar"
 
-#: ../src/gourmand/main.py:1063
+#: ../src/gourmand/main.py:1072
 msgid "_About"
 msgstr "_Om"
 
-#: ../src/gourmand/main.py:1071
+#: ../src/gourmand/main.py:1080
 msgid "_Tools"
 msgstr "V_erktyg"
 
-#: ../src/gourmand/main.py:1072
+#: ../src/gourmand/main.py:1081
 msgid "_Timer"
 msgstr "_Tidtagarur"
 
-#: ../src/gourmand/main.py:1073
+#: ../src/gourmand/main.py:1082
 msgid "Show timer"
 msgstr "Visa timer"
 
-#: ../src/gourmand/main.py:1078
+#: ../src/gourmand/main.py:1087
 msgid "Searchable index of recipes in the database."
 msgstr "Sökbart index över recept i databasen."
 
-#: ../src/gourmand/main.py:1187
+#: ../src/gourmand/main.py:1196
 #, python-format
 msgid "Delete %s?"
 msgstr "Ta bort %s?"
 
-#: ../src/gourmand/main.py:1188
+#: ../src/gourmand/main.py:1197
 #, python-format
 msgid "You have unsaved changes to %s. Are you sure you want to delete?"
 msgstr "Du har osparade ändringar till %s. Är du säker på att du vill radera?"
 
-#: ../src/gourmand/main.py:1217
+#: ../src/gourmand/main.py:1226
 msgid "Deleted"
 msgstr "Borttagen"
 
-#: ../src/gourmand/main.py:1217
+#: ../src/gourmand/main.py:1226
 msgid "Untitled"
 msgstr "Namnlös"
 
-#: ../src/gourmand/main.py:1225
+#: ../src/gourmand/main.py:1234
 msgid "Permanently delete recipes?"
 msgstr "Ta bort recept permanent?"
 
-#: ../src/gourmand/main.py:1227
+#: ../src/gourmand/main.py:1236
 msgid "Permanently delete recipe?"
 msgstr "Ta bort recept permanent?"
 
-#: ../src/gourmand/main.py:1228
+#: ../src/gourmand/main.py:1237
 #, python-format
 msgid "Are you sure you want to delete the recipe <i>%s</i>"
 msgstr "Är du säker på att du vill tabort receptet <i>%s</i>"
 
-#: ../src/gourmand/main.py:1230
+#: ../src/gourmand/main.py:1239
 msgid "Are you sure you want to delete the following recipes?"
 msgstr "Är du säker på att du vill ta bort följande recept?"
 
-#: ../src/gourmand/main.py:1234
+#: ../src/gourmand/main.py:1243
 #, python-format
 msgid "Are you sure you want to delete the %s selected recipes?"
 msgstr "Är du säker på att du vill ta bort det %s valda recepten?"
 
-#: ../src/gourmand/main.py:1236
+#: ../src/gourmand/main.py:1245
 msgid "See recipes"
 msgstr "Se recept"
 
-#: ../src/gourmand/main.py:1244
+#: ../src/gourmand/main.py:1253
 msgid "Delete Recipes"
 msgstr "Radera recepten"
 
-#: ../src/gourmand/main.py:1246
+#: ../src/gourmand/main.py:1255
 msgid "Recipes deleted"
 msgstr "Recept borttaget"
 
-#: ../src/gourmand/main.py:1271
+#: ../src/gourmand/main.py:1280
 #, python-format
 msgid "Deleted recipe %s"
 msgstr "Tog bort recept %s"
 
-#: ../src/gourmand/main.py:1298
+#: ../src/gourmand/main.py:1307
 msgid "See Trash Now"
 msgstr "Se papperskorgen nu"
 
-#: ../src/gourmand/main.py:1337
+#: ../src/gourmand/main.py:1346
 msgid "Done!"
 msgstr "Färdig!"
 
-#: ../src/gourmand/main.py:1345
+#: ../src/gourmand/main.py:1354
 msgid "Importing..."
 msgstr "Importerar..."
 
@@ -2247,33 +2252,33 @@ msgid "_Auto-merge"
 msgstr "Slå samman _automatiskt"
 
 #. len(vals)==0
-#: ../src/gourmand/plugins/field_editor/fieldEditor.py:103
+#: ../src/gourmand/plugins/field_editor/fieldEditor.py:106
 msgid "For each selected value"
 msgstr "För varje valt värde"
 
-#: ../src/gourmand/plugins/field_editor/fieldEditor.py:107
+#: ../src/gourmand/plugins/field_editor/fieldEditor.py:110
 #, python-format
 msgid "Where %(field)s is %(value)s"
 msgstr "Där %(field)s är %(value)s"
 
-#: ../src/gourmand/plugins/field_editor/fieldEditor.py:168
+#: ../src/gourmand/plugins/field_editor/fieldEditor.py:171
 #, python-format
 msgid "Change will affect %s recipe"
 msgid_plural "Change will affect %s recipes"
 msgstr[0] "Ändringarna kommer att påverka %s recept"
 msgstr[1] "Ändringarna kommer att påverka %s recept"
 
-#: ../src/gourmand/plugins/field_editor/fieldEditor.py:172
+#: ../src/gourmand/plugins/field_editor/fieldEditor.py:175
 #, python-format
 msgid "Delete %s where it is %s?"
 msgstr "Radera %s när det är %s?"
 
-#: ../src/gourmand/plugins/field_editor/fieldEditor.py:175
+#: ../src/gourmand/plugins/field_editor/fieldEditor.py:178
 #, python-format
 msgid "Change %s from %s to \"%s\"?"
 msgstr "Ändra %s från %s till %s?"
 
-#: ../src/gourmand/plugins/field_editor/fieldEditor.py:181
+#: ../src/gourmand/plugins/field_editor/fieldEditor.py:184
 msgid "<i>This change is not reversable.</i>"
 msgstr "<i>Denna ändring går inte att ångra.</i>"
 
@@ -2286,27 +2291,6 @@ msgstr "Fältredigerare"
 #: ../data/plugins/field_editor.gourmet-plugin.in.h:2
 msgid "Edit fields across multiple recipes at a time."
 msgstr "Redigera fält i flera recept samtidigt."
-
-#: ../src/gourmand/plugins/email_plugin/emailer_plugin.py:25
-#: ../src/gourmand/plugins/email_plugin/emailer_plugin.py:45
-msgid "Email recipes"
-msgstr "E-posta recept"
-
-#: ../src/gourmand/plugins/email_plugin/emailer_plugin.py:26
-msgid "Email all selected recipes (or all recipes if no recipes are selected"
-msgstr "E-posta alla utvalda recept (eller alla recept om inga recept välts"
-
-#. only called for l>20, so fancy gettext methods
-#. shouldn't be necessary if my knowledge of
-#. linguistics serves me
-#: ../src/gourmand/plugins/email_plugin/emailer_plugin.py:49
-#, python-format
-msgid "Do you really want to email all %s selected recipes?"
-msgstr "Vill du verkligen e-posta alla %s utvalda recept?"
-
-#: ../src/gourmand/plugins/email_plugin/emailer_plugin.py:50
-msgid "Yes, e_mail them"
-msgstr "Ja, _e-posta dom"
 
 #: ../src/gourmand/plugins/unit_converter/convertGui.py:115
 #, python-format
@@ -2599,7 +2583,7 @@ msgstr "Indexkort (A7)"
 #. This allows us to have a locale-agnostic GUI.
 #: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:867
 #: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:880
-#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1021
+#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1022
 msgid "Plain"
 msgstr "Normal"
 
@@ -2631,14 +2615,14 @@ msgstr[0] "%s Spalt"
 msgstr[1] "%s Spalter"
 
 #: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:891
-#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1025
-#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1056
+#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1026
+#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1057
 msgid "Portrait"
 msgstr "Stående"
 
 #: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:892
-#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1007
-#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1054
+#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1008
+#: ../src/gourmand/plugins/import_export/pdf_plugin/pdf_exporter.py:1055
 msgid "Landscape"
 msgstr "Liggande"
 
@@ -3467,37 +3451,6 @@ msgstr "Exporterade %(number)s av %(total)s recept"
 msgid "Export complete."
 msgstr "Export klar."
 
-#: ../src/gourmand/exporters/recipe_emailer.py:129
-msgid "Include Recipe in Body of E-mail (A good idea no matter what)"
-msgstr "Inkludera receptet i själva meddelandet."
-
-#: ../src/gourmand/exporters/recipe_emailer.py:130
-msgid "E-mail Recipe as HTML Attachment"
-msgstr "Skicka receptet per e-post som en HTML-bilaga"
-
-#: ../src/gourmand/exporters/recipe_emailer.py:131
-msgid "E-mail Recipe as PDF Attachment"
-msgstr "Skicka recept som PDF-bilaga med Epost"
-
-#: ../src/gourmand/exporters/recipe_emailer.py:148
-msgid "Email Options"
-msgstr "Epostinställningar"
-
-#: ../src/gourmand/exporters/recipe_emailer.py:151
-msgid "Don't ask before sending e-mail."
-msgstr "Fråga inte före e-post skickas."
-
-#: ../src/gourmand/exporters/recipe_emailer.py:170
-msgid "E-mail not sent"
-msgstr "Eposten skickades inte"
-
-#: ../src/gourmand/exporters/recipe_emailer.py:171
-msgid ""
-"You have not chosen to include the recipe in the body of the message or as "
-"an attachment."
-msgstr ""
-"Du har inte valt att inkludera receptet i meddelandet eller som bilaga."
-
 #: ../src/gourmand/exporters/exportManager.py:50
 msgid "Save recipe as..."
 msgstr "Spara recept som..."
@@ -3529,7 +3482,7 @@ msgstr "Se till att välja en filtyp i rullgardinsmenyn när du sparar."
 msgid "Export"
 msgstr "Exportera"
 
-#: ../src/gourmand/exporters/exportManager.py:163
+#: ../src/gourmand/exporters/exportManager.py:168
 #, python-format
 msgid "Recipes successfully exported to <a href=\"file:///%s\">%s</a>"
 msgstr "Recepten exporterades till <a href=\"file:///%s\">%s</a>"
@@ -3579,18 +3532,18 @@ msgstr "Alla importerade filer"
 msgid "Imported %s recipes."
 msgstr "Importerade %s recept."
 
-#: ../src/gourmand/importers/importer.py:190
+#: ../src/gourmand/importers/importer.py:191
 msgid "serving"
 msgid_plural "servings"
 msgstr[0] "portion"
 msgstr[1] "portioner"
 
-#: ../src/gourmand/importers/importer.py:273
+#: ../src/gourmand/importers/importer.py:274
 #, python-format
 msgid "Imported %s of %s recipes."
 msgstr "Importerade %s av %s recept."
 
-#: ../src/gourmand/importers/importer.py:500
+#: ../src/gourmand/importers/importer.py:501
 msgid "okay"
 msgstr "okej"
 
@@ -3626,56 +3579,56 @@ msgstr "Rensa _taggar"
 msgid "Import Recipe"
 msgstr "Importera recept"
 
-#: ../src/gourmand/recindex.py:46 ../src/gourmand/recindex.py:55
-#: ../src/gourmand/recindex.py:492
+#: ../src/gourmand/recindex.py:47 ../src/gourmand/recindex.py:56
+#: ../src/gourmand/recindex.py:493
 msgid "anywhere"
 msgstr "alltid"
 
-#: ../src/gourmand/recindex.py:47 ../src/gourmand/recindex.py:56
+#: ../src/gourmand/recindex.py:48 ../src/gourmand/recindex.py:57
 msgid "title"
 msgstr "titel"
 
-#: ../src/gourmand/recindex.py:48 ../src/gourmand/recindex.py:57
+#: ../src/gourmand/recindex.py:49 ../src/gourmand/recindex.py:58
 msgid "ingredient"
 msgstr "ingrediens"
 
-#: ../src/gourmand/recindex.py:49 ../src/gourmand/recindex.py:61
+#: ../src/gourmand/recindex.py:50 ../src/gourmand/recindex.py:62
 msgid "instructions"
 msgstr "instruktioner"
 
-#: ../src/gourmand/recindex.py:50 ../src/gourmand/recindex.py:62
+#: ../src/gourmand/recindex.py:51 ../src/gourmand/recindex.py:63
 msgid "notes"
 msgstr "anteckningar"
 
-#: ../src/gourmand/recindex.py:52 ../src/gourmand/recindex.py:59
+#: ../src/gourmand/recindex.py:53 ../src/gourmand/recindex.py:60
 msgid "cuisine"
 msgstr "matkultur"
 
-#: ../src/gourmand/recindex.py:53 ../src/gourmand/recindex.py:60
+#: ../src/gourmand/recindex.py:54 ../src/gourmand/recindex.py:61
 msgid "source"
 msgstr "källa"
 
-#: ../src/gourmand/recindex.py:102
+#: ../src/gourmand/recindex.py:103
 msgid "Use regular expressions in search"
 msgstr "Använd reguljära uttryck i sökningen"
 
-#: ../src/gourmand/recindex.py:103
+#: ../src/gourmand/recindex.py:104
 msgid "Use regular expressions (an advanced search language) in text search"
 msgstr "Använd reguljära uttryck (ett avancerat sökspråk) i textsökningen"
 
-#: ../src/gourmand/recindex.py:108
+#: ../src/gourmand/recindex.py:109
 msgid "Search as you type (turn off if search is too slow)."
 msgstr "Sök medans du skriver (stäng av om sökningen är för långsam)."
 
-#: ../src/gourmand/recindex.py:112
+#: ../src/gourmand/recindex.py:113
 msgid "Show Search _Options"
 msgstr "Visa sök_inställningar"
 
-#: ../src/gourmand/recindex.py:113
+#: ../src/gourmand/recindex.py:114
 msgid "Show advanced searching options"
 msgstr "Visa avancerade sökinställningar"
 
-#: ../src/gourmand/recindex.py:282
+#: ../src/gourmand/recindex.py:283
 #, python-format
 msgid "%s recipe"
 msgid_plural "%s recipes"
@@ -3684,12 +3637,12 @@ msgstr[1] "%s recept"
 
 #. Do not translate bottom, top and total -- I use these fancy formatting
 #. strings in case your language needs the order changed!
-#: ../src/gourmand/recindex.py:290
+#: ../src/gourmand/recindex.py:291
 #, python-format
 msgid "Showing recipes %(bottom)s to %(top)s of %(total)s"
 msgstr "Visar recept %(bottom)s till %(top)s av %(total)s"
 
-#: ../src/gourmand/recindex.py:493
+#: ../src/gourmand/recindex.py:494
 #, python-format
 msgid "%s in %s"
 msgstr "%s i %s"
@@ -4001,6 +3954,44 @@ msgstr ""
 "Använd detta om dina utf-16 textfiler inte importeras rent i Gourmand. Stäng "
 "av om du inte använder utf-16 och du ständigt irriteras av \"kodning\"s "
 "dialogen när du importerar filer."
+
+#~ msgid "Email recipes"
+#~ msgstr "E-posta recept"
+
+#~ msgid ""
+#~ "Email all selected recipes (or all recipes if no recipes are selected"
+#~ msgstr "E-posta alla utvalda recept (eller alla recept om inga recept välts"
+
+#, python-format
+#~ msgid "Do you really want to email all %s selected recipes?"
+#~ msgstr "Vill du verkligen e-posta alla %s utvalda recept?"
+
+#~ msgid "Yes, e_mail them"
+#~ msgstr "Ja, _e-posta dom"
+
+#~ msgid "Include Recipe in Body of E-mail (A good idea no matter what)"
+#~ msgstr "Inkludera receptet i själva meddelandet."
+
+#~ msgid "E-mail Recipe as HTML Attachment"
+#~ msgstr "Skicka receptet per e-post som en HTML-bilaga"
+
+#~ msgid "E-mail Recipe as PDF Attachment"
+#~ msgstr "Skicka recept som PDF-bilaga med Epost"
+
+#~ msgid "Email Options"
+#~ msgstr "Epostinställningar"
+
+#~ msgid "Don't ask before sending e-mail."
+#~ msgstr "Fråga inte före e-post skickas."
+
+#~ msgid "E-mail not sent"
+#~ msgstr "Eposten skickades inte"
+
+#~ msgid ""
+#~ "You have not chosen to include the recipe in the body of the message or "
+#~ "as an attachment."
+#~ msgstr ""
+#~ "Du har inte valt att inkludera receptet i meddelandet eller som bilaga."
 
 #~ msgid "Open _Trash"
 #~ msgstr "Öppna papperskorgen"

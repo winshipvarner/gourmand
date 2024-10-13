@@ -583,6 +583,8 @@ class Language(AbstractLanguage):
     # For example: 1 cup has 16 tablespoons.
     CONVERTER_TABLE = {
         ("c", "Tbs"):16,
+        ("verre", "tbs."):16,
+        ("pot", "ml"):125,
         ("lb", "oz"):16,
         ("Tbs", "tsp"):3,
         ("pt", "c"):2,
@@ -600,6 +602,9 @@ class Language(AbstractLanguage):
         ("fl oz","Tbs"):2,
         ("kg", "g"):1000,
         ("g", "mg"):1000,
+        ("dag","g"):10,
+        ("dg", "mg"):100,
+        ("cg", "mg"):10,        
         ("tsp", "drop"):76,
         ("oz", "dram"):16,
         ("dram", "grains"):27.34375,
@@ -656,39 +661,59 @@ class Language(AbstractLanguage):
     UNITS = [("",       ["each",   "eaches",  "ea",   "ea."]),
              ("bucket", ["bucket", "buckets", "bckt", "bckt."]),
              ("peck",   ["peck",   "pecks"]),
-             ("bushel", ["bushel", "bushels", "bshl", "bshl.", "bsh", "bsh.", "bu", "bu."]),
+             ("bushel", ["bushel", "bushels", "bshl", "bshl.", "bsh", "bsh.", "bu", "bu.", "boisseau", "boisseaux"]),
              ("grains", ["grain",  "grains"]),
-             ("dram",   ["dram",   "drams"]),
-             ("drop",   ["drop",   "drops"]),
+             ("dram",   ["dram",   "drams", "petit verre", "petits verres"]),
+             ("drop",   ["drop",   "drops", "goutte", "gouttes", "trait"]),
              ("fl oz",  ["fl oz",      "fluid ounce","fluid ounces","fl ounces",   "fl. ounces","fl. oz",     "fl oz.",     "fl. oz."]),
-             ("tsp",    ["teaspoon",   "teaspoons",  "tea_spoon",   "tea_spoons",  "Teaspoon",  "Teaspoons",  "Tea_spoon",  "Tea_spoons",  "tsps","tsps.","Tsps","Tsps.","tsp","tsp.","Tsp","Tsp.","ts","ts.","Ts","Ts.","t","t."]),
-             ("Tbs",    ["tablespoon", "tablespoons","table_spoon", "table_spoons","Tablespoon","Tablespoons","Table_spoon","Table_spoons","tbsp","tbsp.","Tbsp","Tbsp.","tbs","tbs.","Tbs","Tbs.","tb","tb.","Tb","Tb.","T","T."]),
+             ("tsp",    ["teaspoon",   "teaspoons",  "tea_spoon",   "tea_spoons",  "Teaspoon",  "Teaspoons",  "Tea_spoon",  "Tea_spoons",  "tsps","tsps.","Tsps","Tsps.","tsp","tsp.","Tsp","Tsp.","ts","ts.","Ts","Ts.","t","t.", "cc", "cc.", "c.a.c.", "c. à c", "cuillerée à café", "cuillerées à café", "cuillère à café", "cuillères à café", "cuil. à café"]),
+             ("Tbs",    ["tablespoon", "tablespoons","table_spoon", "table_spoons","Tablespoon","Tablespoons","Table_spoon","Table_spoons","tbsp","tbsp.","Tbsp","Tbsp.","tbs","tbs.","Tbs","Tbs.","tb","tb.","Tb","Tb.","T","T.", "cs", "cs.", "c.a.s.", "c. à s", "cuillerée à soupe", "cuillerées à soupe", "cuillère à soupe", "cuillères à soupe", "cuil. à soupe"]),
              ("lb",     ["pound",      "pounds",     "lbs",  "lbs.",  "lb",  "lb."]),
              ("oz",     ["ounce",      "ounces",     "oz",   "oz."]),
-             ("c",      ["cup",        "cups",       "c."]),
+             ("c",      ["cup",        "cups",       "c.",   "tasses", "tasse", "bol", "bols"]),
+             ("verre",  ["verre", "verres"]),
+             ("pot",    ["pot", "pots"]),
              ("qt",     ["quart",      "quarts",     "qt.",  "Qt", "Qt."]),
-             ("pt",     ["pint",       "pints",      "pt.",  "Pt", "Pt."]),
+             ("pt",     ["pint",       "pints",      "pt.",  "Pt", "Pt.", "pinte", "pintes"]),
              ("gallon", ["gallon",     "gallons",    "gal",  "gal."]),
              ("ml",     ["mililiter",  "mililiters", "milliliter", "milliliters", "millilitre", "millilitres", "ml", "ml."]),
              ("cl",     ["centiliter", "centiliters","centilitre", "centilitres", "cl", "cl."]),
              ("dl",     ["deciliter",  "deciliters", "decilitre", "deciilitres", "dl",   "dl."]),
              ("l",      ["liter",      "liters",     "litre", "litres""lit.", "l", "l."]),
-             ("g",      ["grams",    "gram",      "g.", "g", "gr", "gr."]),
-             ("mg",     ["miligram", "miligrams", "millogram", "millograms", "mg", "mg."]),
-             ("kg",     ["kilogram", "kilograms", "kg", "kg."]),
+             ("g",      ["grams",      "gram",       "g.", "g", "gr", "gr.", "gramme", "grammes"]),
+             ("cg",     ["cg", "cg.",  "centigramme", "centigrammes"]),
+             ("dg",     ["dg", "dg.",  "décigramme", "décigrammes"]),
+             ("mg",     ["miligram",   "miligrams",  "milligram", "milligrams", "mg", "mg.", "milligramme", "milligrammes"]),
+             ("kg",     ["kilogram",   "kilograms",  "kg", "kg.", "kilogramme", "kilogrammes"]),
+             ("dag",	["dag", "dag.", "décagramme", "décagrammes"]),
              # These names aren"t really convertible, but we want them to
              # be recognized as units.
-             ("small",  ["small",  "Small",    "sm",  "sm."]),
+             ("small",  ["small",  "Small",    "sm",  "sm.",  "petit",    "petits",   "petite", "petites"]),
              ("medium", ["medium", "Medium",   "med", "med.", "Med", "Med."]),
-             ("large",  ["large",  "Large",    "lg",  "lg.",  "Lg",  "Lg."]),
+             ("large",  ["large",  "Large",    "lg",  "lg.",  "Lg",  "Lg.", "larges",   "grosse",  "grosses", "gros"]),
+             ("boîte",  ["boite",    "boites",   "boîte", "boîtes"]),
+             ("dose",   ["dose",     "doses"]),
+             ("entier", ["entier",   "entiers",  "entière", "entières"]),
+             ("clou",   ["clou",     "clous" ]),                                 # Clou de girofle             
              ("box",    ["box",    "Box",      "bx"]),
              ("whole",  ["whole",  "whl",      "wh."]),
              ("clove",  ["clove",  "cloves",   "clv",    "clv."]),
              ("can",    ["can",    "Can",      "cn",      "cn."]),
              ("head",   ["head",   "heads",    "Head",    "Heads",    "hd",       "hd."]),
-             ("package",["pkg.",   "package",  "Package", "packages", "Packages", "pkg", "Pkg.", "pack"]),
+             ("package",["pkg.",   "package",  "Package", "packages", "Packages", "pkg", "Pkg.", "pack"]),             
              ("slice",  ["slice",  "slices"]),
              ("bunch",  ["bunch",  "bunches"]),
+             ("pincée", ["pincée",   "pincées"]),                                # eg pincée de sel
+             ("morceau",["morceau",  "morceaux"]),                               # eg: morceau de sucre
+             ("bouquet",["bouquet",  "bouquets", "grappe", "grappes"]),
+             ("feuille",["feuille",  "feuilles"]),                               # eg: feuille de laurier...
+             ("botte"  ,["botte",    "bottes"]),                                 # eg: botte de radis
+             ("branche",["branche",  "branches"]),                               # eg: branches de thym
+             ("brin"   ,["brin",     "brins"]),                                  # eg: brin de percil
+             ("gousse", ["gousse",   "gousses"]),                                # eg: gousse d'ail
+             ("cube",   ["cube",     "cubes"]),                                  # eg: cube de bouillon
+             ("tranche",["tranche",  "tranches"]),                               # eg: tranche de lard
+             ("zeste",  ["zeste",    "zestes"]),                                 # eg: zeste de citron
              ]
 
     METRIC_RANGE = (1,999)

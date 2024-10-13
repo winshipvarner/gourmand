@@ -78,7 +78,7 @@ def make_simple_select_arg (criteria,*tables):
             else:
                 args.append(k.op(operator)(value))
         else:
-            args.append(k==v)
+            args.append(k==v)            
     if len(args)>1:
         return [and_(*args)]
     elif args:
@@ -946,14 +946,16 @@ class RecData (Pluggable):
                 v = new_values_dic[k]
                 del new_values_dic[k]
                 new_values_dic[str(k)] = v
+                
             table.update(*make_simple_select_arg(update_criteria,table)).execute(**new_values_dic)
+
         except:
             print('update_by_criteria error...')
-            print('table:',table)
-            print('UPDATE_CRITERIA:')
+            print('TABLE: ',table)
+            print('UPDATE_CRITERIA: ')
             for k,v in list(update_criteria.items()): print('','KEY:',k,'VAL:',v)
             print('NEW_VALUES_DIC:')
-            for k,v in list(new_values_dic.items()): print('','KEY:',k,type(k),'VAL:',v)
+            for k,v in list(new_values_dic.items()): print('','KEY: ',k,type(k),'VAL: ',v)
             raise
 
     def add_column_to_table (self, table, column_spec):

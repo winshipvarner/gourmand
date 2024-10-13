@@ -204,6 +204,7 @@ class RecCardDisplay (plugin_loader.Pluggable):
         self.mm = mnemonic_manager.MnemonicManager()
         self.mm.add_toplevel_widget(self.window)
         self.mm.fix_conflicts_peacefully()
+        self.MAX_WIN = self.prefs.get('max_image_size', -1)
 
     def setup_uimanager (self):
         self.ui_manager = Gtk.UIManager()
@@ -337,6 +338,8 @@ class RecCardDisplay (plugin_loader.Pluggable):
         origwidth = self.orig_pixbuf.get_width()
         new_pb = None
         if iwidth > image_width:
+            if self.MAX_WIN != -1 and image_width > self.MAX_WIN:
+               image_width = self.MAX_WIN
             scale = float(image_width)/iwidth
             width = iwidth * scale
             height = pb.get_height() * scale
@@ -347,6 +350,8 @@ class RecCardDisplay (plugin_loader.Pluggable):
                 )
         elif (origwidth > iwidth) and (image_width > iwidth):
             if image_width < origwidth:
+                if self.MAX_WIN != -1 and image_width > self.MAX_WIN:
+                   image_width = self.MAX_WIN
                 scale = float(image_width)/origwidth
                 width = image_width
                 height = self.orig_pixbuf.get_height() * scale
@@ -382,8 +387,10 @@ class RecCardDisplay (plugin_loader.Pluggable):
                            expand=False, padding=0)
         self.main = self.ui.get_object('recipeDisplayMain')
         self.main.unparent()
-        main_vb.pack_start(self.main, True, True, 0); self.main.show()
-        self.window.add(main_vb); main_vb.show()
+        main_vb.pack_start(self.main, True, True, 0)
+        self.main.show()
+        self.window.add(main_vb)
+        main_vb.show()
         # Main has a series of important boxes which we will add our interfaces to...
         self.left_notebook = self.ui.get_object('recipeDisplayLeftNotebook')
         self.window.add_accel_group(self.ui_manager.get_accel_group())
@@ -1499,7 +1506,7 @@ class ImageBox:
             wheight = window.get_height()
             size = (int(wwidth / 3), int(wheight / 3))
         else:
-            size = (100, 100)
+            size = (400, 400)
 
         self.image.thumbnail(size)
         self.set_from_bytes(iu.image_to_bytes(self.image))
@@ -1520,7 +1527,7 @@ class ImageBox:
 
         self.image = iu.bytes_to_image(bytes_)
         self.thumbnail = self.image.copy()
-        self.thumbnail.thumbnail((40, 40))
+        self.thumbnail.thumbnail((100, 100))
 
         self.show_image()
         self.edited = True
