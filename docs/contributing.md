@@ -55,15 +55,15 @@ environment](https://docs.python.org/3/library/venv.html). This is optional but
 highly recommended:
 
 ```bash
-$ python -m venv --prompt gourmand venv
+$ python3 -m venv --prompt gourmand venv
 $ source venv/bin/activate
-(gourmand) $ pip install -U pip setuptools wheel
+(gourmand) $ pip3 install -U pip3 setuptools wheel
 ```
 
 Then install Gourmand itself:
 
 ```bash
-(gourmand) $ pip install -r development.in
+(gourmand) $ pip3 install -r development.in
 ```
 
 This installs the remaining Python dependencies and Gourmand itself in editable
@@ -74,8 +74,8 @@ reinstall it.
 `pygtkspellcheck`, first install `pyenchant` and `pygobject` on their own:
 
 ```bash
-(gourmand) $ pip install pyenchant pygobject
-(gourmand) $ pip install -r development.in
+(gourmand) $ pip3 install pyenchant pygobject
+(gourmand) $ pip3 install -r development.in
 ```
 
 You should now be able to launch and run Gourmand:
@@ -120,6 +120,12 @@ If modifying an already existing translation, update the translation file:
 msgmerge --update --no-fuzzy-matching --backup=off fr.po gourmand.pot
 ```
 
+To update all the translation files at the same time, the following code can be used:
+
+```bash
+for file in ./*.po; do msgmerge --update --no-fuzzy-matching --backup=off ${file} gourmand.pot; done
+```
+
 If adding translation for a new language, copy the file for your target
 language, such as `fr.po` or `de_AT.po`, if translating for a specific region,
 and add it to git.
@@ -127,7 +133,7 @@ and add it to git.
 Once the translation is done, update the translations:
 
 ```bash
-python setup.py build_i18n
+python3 setup.py build_i18n
 ```
 
 Launch Gourmand and check the changes.  

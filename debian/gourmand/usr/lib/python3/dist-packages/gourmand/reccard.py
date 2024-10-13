@@ -387,8 +387,10 @@ class RecCardDisplay (plugin_loader.Pluggable):
                            expand=False, padding=0)
         self.main = self.ui.get_object('recipeDisplayMain')
         self.main.unparent()
-        main_vb.pack_start(self.main, True, True, 0); self.main.show()
-        self.window.add(main_vb); main_vb.show()
+        main_vb.pack_start(self.main, True, True, 0)
+        self.main.show()
+        self.window.add(main_vb)
+        main_vb.show()
         # Main has a series of important boxes which we will add our interfaces to...
         self.left_notebook = self.ui.get_object('recipeDisplayLeftNotebook')
         self.window.add_accel_group(self.ui_manager.get_accel_group())
