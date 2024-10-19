@@ -1,5 +1,6 @@
 import pytest
-import toml
+import tomllib
+import tomli_w
 
 from pathlib import Path
 
@@ -37,22 +38,22 @@ def test_update_preferences_file_format(tmpdir):
     filename = tmpdir.join('preferences.toml')
 
     with open(filename, 'w') as fout:
-        toml.dump({'sort_by': {'column': 'title', 'ascending': True}}, fout)
+        tomli_w.dump({'sort_by': {'column': 'title', 'ascending': True}}, fout)
 
     update_preferences_file_format(Path(tmpdir))
 
     with open(filename) as fin:
-        d = toml.load(fin)
+        d = tomllib.load(fin)
 
     assert 'category' not in d['sort_by'].keys()
     assert d['sort_by']['title'] == True
 
     with open(filename, 'w') as fout:
-        toml.dump({}, fout)
+        tomli_w.dump({}, fout)
 
     update_preferences_file_format(Path(tmpdir))
 
     with open(filename) as fin:
-        d = toml.load(fin)
+        d = tomllib.load(fin)
 
     assert d == {}

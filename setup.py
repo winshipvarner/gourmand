@@ -194,7 +194,7 @@ setup(
         'pillow>=8.3.2',
         'pygobject==3.40.1',
         'sqlalchemy==1.4.36',
-        'toml==0.10.2',
+        'tomli_w>=1.0.0',
         'recipe-scrapers>=14.27.0',
     ],
     extras_require={
