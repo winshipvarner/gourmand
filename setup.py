@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 from pathlib import Path
 from typing import Union
 
@@ -194,7 +195,8 @@ setup(
         'pillow>=8.3.2',
         'pygobject==3.40.1',
         'sqlalchemy==1.4.36',
-        'tomli_w>=1.0.0',
+        'tomli_w>=1.0.0;python_version>="3.11"',
+        'toml=0.10.2;python_version<"3.11"',
         'recipe-scrapers>=14.27.0',
     ],
     extras_require={

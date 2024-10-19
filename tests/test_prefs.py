@@ -1,6 +1,12 @@
 import pytest
-import tomllib
-import tomli_w
+import sys
+
+if sys.version_info >= (3, 11):
+    import tomllib.load as tom_load
+    import tomli_w.dump as tom_dump
+else:
+    import tomli.load as tom_load
+    import tomli.dump as tom_dump
 
 from pathlib import Path
 
@@ -38,22 +44,22 @@ def test_update_preferences_file_format(tmpdir):
     filename = tmpdir.join('preferences.toml')
 
     with open(filename, 'w') as fout:
-        tomli_w.dump({'sort_by': {'column': 'title', 'ascending': True}}, fout)
+        tom_dump({'sort_by': {'column': 'title', 'ascending': True}}, fout)
 
     update_preferences_file_format(Path(tmpdir))
 
     with open(filename) as fin:
-        d = tomllib.load(fin)
+        d = tom_load(fin)
 
     assert 'category' not in d['sort_by'].keys()
     assert d['sort_by']['title'] == True
 
     with open(filename, 'w') as fout:
-        tomli_w.dump({}, fout)
+        tom_dump({}, fout)
 
     update_preferences_file_format(Path(tmpdir))
 
     with open(filename) as fin:
-        d = tomllib.load(fin)
+        d = tom_load(fin)
 
     assert d == {}
