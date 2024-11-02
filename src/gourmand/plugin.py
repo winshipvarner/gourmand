@@ -412,7 +412,7 @@ class PluginPlugin (StandardPlugin):
 class RecDisplayModule (UIModule):
 
     def __init__ (self, recDisplay):
-        self.action_groups = [] #wv
+        self.action_groups = []
         self.rd = recDisplay; self.rg = self.rd.rg
         UIModule.__init__(self)
 
