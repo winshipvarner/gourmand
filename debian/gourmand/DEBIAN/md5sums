@@ -2,7 +2,7 @@
 f536261df8e65275b24d4720f3ead738  usr/lib/python3/dist-packages/gourmand-1.1.1.egg-info/PKG-INFO
 68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/gourmand-1.1.1.egg-info/dependency_links.txt
 39f1581e74480f0f6247689c19bf2bcb  usr/lib/python3/dist-packages/gourmand-1.1.1.egg-info/entry_points.txt
-7b61e6a45e9eb22b5e8ffd5c5cf58c49  usr/lib/python3/dist-packages/gourmand-1.1.1.egg-info/requires.txt
+ef1bcfe6ace627ae2ea7642258f14c13  usr/lib/python3/dist-packages/gourmand-1.1.1.egg-info/requires.txt
 60ff9dc9b5e4f74bf73bcc0dbb47ab4a  usr/lib/python3/dist-packages/gourmand-1.1.1.egg-info/top_level.txt
 8a266edc82f834bc4517a546daef332d  usr/lib/python3/dist-packages/gourmand/Undo.py
 8c496a9c181adddab1d18d32ebc4362a  usr/lib/python3/dist-packages/gourmand/__init__.py
@@ -10,7 +10,7 @@ f536261df8e65275b24d4720f3ead738  usr/lib/python3/dist-packages/gourmand-1.1.1.e
 2f90ce288dd50b67821c84965f1f83be  usr/lib/python3/dist-packages/gourmand/__version__.py
 3d69d104145ea69b9d64420f9f099f56  usr/lib/python3/dist-packages/gourmand/backends/DatabaseChooser.py
 2b81e648d0b42924563fa3ba2eaf5a9a  usr/lib/python3/dist-packages/gourmand/backends/__init__.py
-42947a54b29517e2e0ae907968fd3483  usr/lib/python3/dist-packages/gourmand/backends/db.py
+7b5e9ac05c0e3f6a295350628cfb6899  usr/lib/python3/dist-packages/gourmand/backends/db.py
 df34fcbb498437f4a31d70ae8ed674c8  usr/lib/python3/dist-packages/gourmand/backends/default.db
 03379fd3eba827fc18afdb77e662cca6  usr/lib/python3/dist-packages/gourmand/batchEditor.py
 055251f98e2ee914a90ddb74653f328d  usr/lib/python3/dist-packages/gourmand/check_encodings.py
@@ -100,7 +100,7 @@ b50618072bf7b9463477eb4a33ef8707  usr/lib/python3/dist-packages/gourmand/data/so
 416e924f10d07b83ce39b2eac4572477  usr/lib/python3/dist-packages/gourmand/defaults/abstractLang.py
 6d2e40f7a0239070417a64c509700175  usr/lib/python3/dist-packages/gourmand/defaults/defaults.py
 e188c44054d2083244b3ca30073a5d67  usr/lib/python3/dist-packages/gourmand/defaults/defaults_de.py
-9bfd89b6b158306cf4be21d693af3a6d  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en.py
+b23adc14abf5c2348093f1ba44afc2e9  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en.py
 d384483abd6777537ee4c04819ce9b06  usr/lib/python3/dist-packages/gourmand/defaults/defaults_en_GB.py
 aebf1a3b2c65f2146718c864e90c5e5d  usr/lib/python3/dist-packages/gourmand/defaults/defaults_es.py
 c7608f1a719400af87617db418d20b4d  usr/lib/python3/dist-packages/gourmand/defaults/defaults_fr.py
@@ -147,10 +147,10 @@ bb01b0a79ffbfa95164eccb96af96b20  usr/lib/python3/dist-packages/gourmand/importe
 e72d5976000372196b3798eca54548f2  usr/lib/python3/dist-packages/gourmand/importers/rezkonv_importer.py
 762300e34db9bc9ba1c06695629956f6  usr/lib/python3/dist-packages/gourmand/importers/web_importer.py
 92117aa08bdd2bedfb6d615bbd05148e  usr/lib/python3/dist-packages/gourmand/importers/xml_importer.py
-870712cbac726aa00af26d942eb0dd90  usr/lib/python3/dist-packages/gourmand/keymanager.py
+755ea115c5aaea48e4ea9e610d7d5c7c  usr/lib/python3/dist-packages/gourmand/keymanager.py
 9592e91be7199d0772a0d14a1272f76c  usr/lib/python3/dist-packages/gourmand/main.py
 60bf575520be2bb2e6a78b1ddc56f535  usr/lib/python3/dist-packages/gourmand/optionparser.py
-d746825bd53082ad60d6fd283c3b134f  usr/lib/python3/dist-packages/gourmand/plugin.py
+83433610132b34f0c8ef160e111fb01c  usr/lib/python3/dist-packages/gourmand/plugin.py
 962c1a42aeab13b4e9d674030873dbc9  usr/lib/python3/dist-packages/gourmand/plugin_gui.py
 7400b4c33dd7478b76b44f86010b24a2  usr/lib/python3/dist-packages/gourmand/plugin_loader.py
 18afe5263bcf03e7fa83b2e6ced339c8  usr/lib/python3/dist-packages/gourmand/plugins/browse_plugin.gourmet-plugin
@@ -270,7 +270,7 @@ dcfd1b059bddd259877b268510c81d5f  usr/lib/python3/dist-packages/gourmand/plugins
 9ecc9c8f9ca09646e959124e8b697cc9  usr/lib/python3/dist-packages/gourmand/plugins/unit_display_prefs/__init__.py
 ee3d6000fcf7570fd66ac57be0aa8462  usr/lib/python3/dist-packages/gourmand/plugins/unit_display_prefs/unit_prefs_dialog.py
 07a26b5b77d2ba9ecf156ac86027a2a1  usr/lib/python3/dist-packages/gourmand/plugins/utf16.gourmet-plugin
-2d773aa142043f69a8be69bad3f1e603  usr/lib/python3/dist-packages/gourmand/prefs.py
+687b1888f862e93306d36050e86fe778  usr/lib/python3/dist-packages/gourmand/prefs.py
 cc35db2d36258199a14f74d34d26ec80  usr/lib/python3/dist-packages/gourmand/prefsGui.py
 553f286885ead2d25a8cc005de70a7ce  usr/lib/python3/dist-packages/gourmand/reccard.py
 d5fe91db0b40e19a979e3134883b280b  usr/lib/python3/dist-packages/gourmand/recindex.py

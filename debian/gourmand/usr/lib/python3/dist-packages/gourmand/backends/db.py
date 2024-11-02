@@ -78,7 +78,7 @@ def make_simple_select_arg (criteria,*tables):
             else:
                 args.append(k.op(operator)(value))
         else:
-            args.append(k==v)            
+            args.append(k==v)
     if len(args)>1:
         return [and_(*args)]
     elif args:
