@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 from pathlib import Path
 from typing import Union
 
@@ -192,9 +193,10 @@ setup(
         'beautifulsoup4>=4.10.0',
         'lxml>=4.6.3',
         'pillow>=8.3.2',
-        'pygobject>=3.40.1',
-        'sqlalchemy<2',
-        'toml>=0.10.2',
+        'pygobject>=3.42.1',
+        'sqlalchemy==1.4.36',
+        'tomli_w>=1.0.0;python_version>="3.11"',
+        'toml==0.10.2;python_version<"3.11"',
         'recipe-scrapers>=14.27.0',
     ],
     extras_require={
@@ -202,7 +204,6 @@ setup(
         'pdf-export': ['reportlab>=3.5.67'],
         'spellcheck': ['pyenchant',
                        'pygtkspellcheck'],
-        #'recipe_scrapers' : ['python3-recipe-scrapers']
     },
     cmdclass={
         'bdist_wheel': BuildWheel,

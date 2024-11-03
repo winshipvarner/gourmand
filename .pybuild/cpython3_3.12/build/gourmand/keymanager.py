@@ -5,7 +5,7 @@ from typing import List, Optional, Tuple
 from .defaults.defaults import lang as defaults
 from .defaults.defaults import langProperties as langProperties
 
-note_separator_regexp = r'(;|\s+-\s+|--)'
+note_separator_regexp = r'(,|;|\s+-\s+|--|\s*\(.*\)\s*)' # in addition to ; - --,  I also added a comma (not sure why it isn't included) and parentheses
 note_separator_matcher = re.compile(note_separator_regexp)
 
 

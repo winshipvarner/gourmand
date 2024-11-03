@@ -700,7 +700,7 @@ class Language(AbstractLanguage):
              ("clove",  ["clove",  "cloves",   "clv",    "clv."]),
              ("can",    ["can",    "Can",      "cn",      "cn."]),
              ("head",   ["head",   "heads",    "Head",    "Heads",    "hd",       "hd."]),
-             ("package",["pkg.",   "package",  "Package", "packages", "Packages", "pkg", "Pkg.", "pack"]),             
+             ("package",["pkg.",   "package",  "Package", "packages", "Packages", "pkg", "Pkg.", "pack"]),
              ("slice",  ["slice",  "slices"]),
              ("bunch",  ["bunch",  "bunches"]),
              ("pincée", ["pincée",   "pincées"]),                                # eg pincée de sel
