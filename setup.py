@@ -204,7 +204,6 @@ setup(
         'pdf-export': ['reportlab>=3.5.67'],
         'spellcheck': ['pyenchant',
                        'pygtkspellcheck'],
-        #'recipe_scrapers' : ['python3-recipe-scrapers']
     },
     cmdclass={
         'bdist_wheel': BuildWheel,
