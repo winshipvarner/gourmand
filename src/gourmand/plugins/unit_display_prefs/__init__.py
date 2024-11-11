@@ -39,7 +39,15 @@ class UnitDisplayPlugin (ToolPlugin):
 class UnitDisplayDatabasePlugin (DatabasePlugin):
 
     def activate (self, db):
+        if self.active:
+            print('Strange -- activate called twice')
+            print('Activate plugin',self,db,'from:')
+            import traceback; traceback.print_stack()
+            print('ignoring')
+            return
+        self.db = db
         db.add_hook(PRE,'get_amount_and_unit',self.get_amount_and_unit_hook)
+        self.active = True
 
     def get_amount_and_unit_hook (self, db, *args, **kwargs):
         kwargs['preferred_unit_groups'] = Prefs.instance().get('preferred_unit_groups',[])

@@ -98,7 +98,7 @@ class ExportManager (plugin_loader.Pluggable):
             # exporting all recipes, which makes this code irrelevant
             # anyway.
             self.app.rd.include_linked_recipes(recs)
-        ext = prefs.get('save_recipes_as','%sxml'%os.path.extsep)
+        ext = prefs.get('save_recipes_as','%sgrmt'%os.path.extsep)
         exp_directory = prefs.get('rec_exp_directory',
                                   get_user_special_dir(UserDirectory.DIRECTORY_DOCUMENTS)
                                   )
