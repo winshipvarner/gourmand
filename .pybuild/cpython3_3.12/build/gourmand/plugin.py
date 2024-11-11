@@ -235,18 +235,20 @@ class DatabasePlugin (StandardPlugin):
             return
         self.db = db
         if db._created:
+            print("TESTING:", db._created)
             # For creation after DB is initialized...
             try:
                 self.create_tables()
             except sqlalchemy.exc.InvalidRequestError as error:
-                print(("An InvalidRequestError was caught: {0}".format(error.args, error.message)))
+                print(("An InvalidRequestError was caught: {0}".format(error.args, error.args)))
             self.db.metadata.create_all()
             db.update_plugin_version(self)
         else:
             db.add_hook(plugin_loader.POST,'setup_tables',self.create_tables)
         self.active = True
 
-    def remove (self):
+
+    def remove(self):
         self.db.remove_hook(plugin_loader.POST,'setup_tables',self.create_tables)
         self.active = False
 

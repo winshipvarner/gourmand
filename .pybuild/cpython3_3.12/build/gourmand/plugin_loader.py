@@ -4,14 +4,17 @@ import os.path
 import sys
 import traceback
 from typing import Dict, List
-
 import pkg_resources
+import importlib
 
 from gourmand import gglobals
 from gourmand.prefs import Prefs
 
 from .defaults.defaults import loc
 from .gdebug import debug
+
+#from gourmand.plugin import StandardPlugin
+
 
 PRE = 0
 POST = 1
@@ -96,7 +99,8 @@ class MasterLoader:
     def load_plugins_from_namespace() -> Dict[str, object]:
         """Look for plugins in the gourmand.plugins namespace."""
         debug('Loading plugins from namespace', 1)
-        exporters = list(pkg_resources.iter_entry_points('gourmand.plugins.exporters'))
+        exporters = list(importlib.metadata.entry_points(group='gourmand.plugins.exporters'))
+        #exporters = list(pkg_resources.iter_entry_points('gourmand.plugins.exporters'))
         #file_importers = list(pkg_resources.iter_entry_points('gourmand.plugins.fileimporters'))
         #web_importers = list(pkg_resources.iter_entry_points('gourmand.plugins.webimporters'))
 
@@ -104,6 +108,7 @@ class MasterLoader:
         for entrypoint in exporters:
             try:
                 plugin = entrypoint.load()
+                print("success")
             except BaseException as e:  # ModuleNotFoundError, ImportError, etc.
                 print(f'Could not load plugin {entrypoint}: {e}')
             else:

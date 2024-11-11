@@ -79,39 +79,40 @@ DEFAULT_HIDDEN_COLUMNS = [REC_ATTR_DIC[attr] for attr in
                           ('link', 'yields', 'yield_unit', 'preptime', 'cooktime')]  # noqa
 
 # Set up custom STOCK items and ICONS!
-icon_factory = Gtk.IconFactory()
-
+#icon_factory = Gtk.IconFactory()
+#icon_theme = Gtk.IconTheme.get_default()
 
 # TODO: Move this into GTK-specific code
 # TODO: Update/remove potentially-deprecated code?
 # GTK 3 has deprecated the use of stock icons, so this may need to be rewritten
 # (or removed altogether) to ensure this works in the future
-def add_icon(
-        pixbuf: GdkPixbuf.Pixbuf,
-        stock_id: str,
-        label: str = None,
-        modifier: Gdk.ModifierType = 0,
-        keyval: int = 0) -> None:
-    iconset = Gtk.IconSet.new_from_pixbuf(pixbuf)
-    icon_factory.add(stock_id, iconset)
-    icon_factory.add_default()
+
+#def add_icon(
+        #pixbuf: GdkPixbuf.Pixbuf,
+        #stock_id: str,
+        #label: str = None,
+        #modifier: Gdk.ModifierType = 0,
+        #keyval: int = 0) -> None:
+#    iconset = Gtk.IconSet.new_from_pixbuf(pixbuf)
+#    icon_factory.add(stock_id, iconset)
+#    icon_factory.add_default()
     # TODO: fix adding icons
-    return
-    Gtk.stock_add([(stock_id, label, modifier, keyval, "")])
+    #return
+    #Gtk.stock_add([(stock_id, label, modifier, keyval, "")])
 
+#for filename, stock_id, label, modifier, keyval in [
+#    ('AddToShoppingList.png', 
+#    'add-to-shopping-list',
+#     _('Add to _Shopping List'),
+#     Gdk.ModifierType.CONTROL_MASK,
+#     Gdk.keyval_from_name('l')),
 
-for filename, stock_id, label, modifier, keyval in [
-    ('AddToShoppingList.png',
-     'add-to-shopping-list',
-     _('Add to _Shopping List'),
-     Gdk.ModifierType.CONTROL_MASK,
-     Gdk.keyval_from_name('l')),
+#    ('reccard.png', 'recipe-card', None, 0, 0),
 
-    ('reccard.png', 'recipe-card', None, 0, 0),
-
-    ('reccard_edit.png', 'edit-recipe-card', None, 0, 0),
-     ]:
-    add_icon(load_pixbuf_from_resource(filename), stock_id, label, modifier, keyval)
+#    ('reccard_edit.png', 'edit-recipe-card', None, 0, 0),
+#     ]:
+    #add_icon(load_pixbuf_from_resource(filename), stock_id, label, modifier, keyval)
+#    load_icon(load_pixbuf_from_resource(filename), stock_id, label, modifier, keyval)
 
 
 # Color scheme preference

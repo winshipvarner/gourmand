@@ -194,7 +194,7 @@ setup(
         'lxml>=4.6.3',
         'pillow>=8.3.2',
         'pygobject>=3.42.1',
-        'sqlalchemy==1.4.36',
+        'sqlalchemy<2',
         'tomli_w>=1.0.0;python_version>="3.11"',
         'toml==0.10.2;python_version<"3.11"',
         'recipe-scrapers>=14.27.0',
@@ -203,7 +203,7 @@ setup(
         'epub-export': ['ebooklib>=0.17.1'],
         'pdf-export': ['reportlab>=3.5.67'],
         'spellcheck': ['pyenchant',
-                       'pygtkspellcheck'],
+                       'pygtkspellcheck',],
     },
     cmdclass={
         'bdist_wheel': BuildWheel,
