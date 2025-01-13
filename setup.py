@@ -1,10 +1,6 @@
 import os
 import re
-<<<<<<< HEAD
-import sys
-=======
 from logging import INFO
->>>>>>> 4ec28cb836ed5c84bd98a75c53280205189890cb
 from pathlib import Path
 from typing import Union
 
