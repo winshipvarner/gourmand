@@ -1,19 +1,17 @@
-import pytest
-import sys
+from sys import version_info
 
-if sys.version_info >= (3, 11):
-    from tomllib import load as tom_load
-    from tomli_w import dump as tom_dump
+import pytest
+
+if version_info >= (3, 11):
+    from tomllib import loads as toml_loads
 else:
-    import tomli.load as tom_load
-    import tomli.dump as tom_dump
+    from tomli import loads as toml_loads
 
 from pathlib import Path
 
-from gourmand.prefs import (
-    Prefs,
-    update_preferences_file_format
-)
+from tomli_w import dumps as toml_dumps
+
+from gourmand.prefs import Prefs, update_preferences_file_format
 
 
 def test_singleton():
@@ -43,23 +41,23 @@ def test_update_preferences_file_format(tmpdir):
 
     filename = tmpdir.join('preferences.toml')
 
-    with open(filename, 'wb') as fout:
-        tom_dump({'sort_by': {'column': 'title', 'ascending': True}}, fout)
+    with open(filename, 'w') as fout:
+        fout.write(toml_dumps({'sort_by': {'column': 'title', 'ascending': True}}))
 
     update_preferences_file_format(Path(tmpdir))
 
-    with open(filename, 'rb') as fin:
-        d = tom_load(fin)
+    with open(filename) as fin:
+        d = toml_loads(fin.read())
 
     assert 'category' not in d['sort_by'].keys()
     assert d['sort_by']['title'] == True
 
-    with open(filename, 'wb') as fout:
-        tom_dump({}, fout)
+    with open(filename, 'w') as fout:
+        fout.write(toml_dumps({}))
 
     update_preferences_file_format(Path(tmpdir))
 
-    with open(filename, 'rb') as fin:
-        d = tom_load(fin)
+    with open(filename) as fin:
+        d = toml_loads(fin.read())
 
     assert d == {}

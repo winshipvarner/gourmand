@@ -937,6 +937,8 @@ class RecData (Pluggable):
         table.delete(*delete_args).execute()
 
     def update_by_criteria (self, table, update_criteria, new_values_dic):
+        print("update_criteria=%s" % (update_criteria,))
+        print("new_values_dic=%s" % (new_values_dic,))
         try:
             to_del = []
             for k in new_values_dic:

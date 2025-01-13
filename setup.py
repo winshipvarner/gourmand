@@ -1,15 +1,16 @@
 import os
 import re
+<<<<<<< HEAD
 import sys
+=======
+from logging import INFO
+>>>>>>> 4ec28cb836ed5c84bd98a75c53280205189890cb
 from pathlib import Path
 from typing import Union
 
-from setuptools import find_packages, setup
+from setuptools import Command, find_packages, setup
 from setuptools.command.develop import develop
 from setuptools.command.sdist import sdist
-
-from distutils.core import Command
-from distutils.log import INFO
 
 from wheel.bdist_wheel import bdist_wheel
 
@@ -191,17 +192,18 @@ setup(
     ],
     install_requires=[
         'beautifulsoup4>=4.10.0',
+        'importlib-metadata; python_version<"3.10"',
         'lxml>=4.6.3',
         'pillow>=8.3.2',
-        'pygobject>=3.42.1',
-        'sqlalchemy<2',
-        'tomli_w>=1.0.0;python_version>="3.11"',
-        'toml==0.10.2;python_version<"3.11"',
-        'recipe-scrapers>=14.27.0',
+        'pygobject>=3.40.1',
+        'sqlalchemy>=1.4.36,<2',
+        'tomli_w>=1.0.0',
+        'toml==0.10.2; python_version<"3.11"',
+        'recipe-scrapers>=14.27.0,<15',
     ],
     extras_require={
-        'epub-export': ['ebooklib>=0.17.1'],
-        'pdf-export': ['reportlab>=3.5.67'],
+        'epub-export': ['ebooklib==0.17.1'],
+        'pdf-export': ['reportlab<4'],
         'spellcheck': ['pyenchant',
                        'pygtkspellcheck',],
     },
