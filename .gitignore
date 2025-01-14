@@ -6,11 +6,13 @@ __pycache__/
 *.egg-info/
 *.gourmet-plugin
 *.mo
+/.pybuild
 /build/
 /dist/
 gourmet.appdata.xml
 gourmet.desktop
 /development.txt
+/debian/gourmand/usr/
 
 # Test outputs
 tests/recipe_files/athenos1.gourmetcleaned.mx2  

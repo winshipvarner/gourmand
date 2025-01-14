@@ -50,8 +50,7 @@ class WindowsPDFPrinter:
         try:
             import winreg
             from subprocess import Popen
-            regPathKey = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE,
-                                         "Software\Microsoft\Windows\CurrentVersion\App Paths\AcroRd32.exe")
+            regPathKey = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, "AcroRd32.exe")
             regPathValue, regPathType = winreg.QueryValueEx(regPathKey, "")
             if regPathType != winreg.REG_SZ:
                 raise TypeError

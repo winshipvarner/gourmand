@@ -247,7 +247,6 @@ class DatabasePlugin (StandardPlugin):
             db.add_hook(plugin_loader.POST,'setup_tables',self.create_tables)
         self.active = True
 
-
     def remove(self):
         self.db.remove_hook(plugin_loader.POST,'setup_tables',self.create_tables)
         self.active = False
