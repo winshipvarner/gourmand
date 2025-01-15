@@ -1,19 +1,16 @@
-import pytest
-import sys
-
-if sys.version_info >= (3, 11):
-    from tomllib import load as tom_load
-    from tomli_w import dump as tom_dump
-else:
-    import tomli.load as tom_load
-    import tomli.dump as tom_dump
-
 from pathlib import Path
+from sys import version_info
 
-from gourmand.prefs import (
-    Prefs,
-    update_preferences_file_format
-)
+import pytest
+
+if version_info >= (3, 11):
+    from tomllib import loads as toml_loads
+else:
+    from tomli import loads as toml_loads
+
+from tomli_w import dumps as toml_dumps
+
+from gourmand.prefs import Prefs, update_preferences_file_format
 
 
 def test_singleton():
@@ -26,40 +23,40 @@ def test_get_sets_default():
     """Test that using get with a default value adds it to the dictionnary"""
     prefs = Prefs.instance()
 
-    val = prefs.get('key', 'value')
+    val = prefs.get("key", "value")
     assert val == val
 
-    assert prefs['key'] == val  # The value was inserted
+    assert prefs["key"] == val  # The value was inserted
 
-    val = prefs.get('anotherkey')
+    val = prefs.get("anotherkey")
     assert val is None
 
     with pytest.raises(KeyError):
-        prefs['anotherkey']
+        prefs["anotherkey"]
 
 
 def test_update_preferences_file_format(tmpdir):
     """Test the update of preferences file format."""
 
-    filename = tmpdir.join('preferences.toml')
+    filename = tmpdir.join("preferences.toml")
 
-    with open(filename, 'wb') as fout:
-        tom_dump({'sort_by': {'column': 'title', 'ascending': True}}, fout)
-
-    update_preferences_file_format(Path(tmpdir))
-
-    with open(filename, 'rb') as fin:
-        d = tom_load(fin)
-
-    assert 'category' not in d['sort_by'].keys()
-    assert d['sort_by']['title'] == True
-
-    with open(filename, 'wb') as fout:
-        tom_dump({}, fout)
+    with open(filename, "w") as fout:
+        fout.write(toml_dumps({"sort_by": {"column": "title", "ascending": True}}))
 
     update_preferences_file_format(Path(tmpdir))
 
-    with open(filename, 'rb') as fin:
-        d = tom_load(fin)
+    with open(filename) as fin:
+        d = toml_loads(fin.read())
+
+    assert "category" not in d["sort_by"].keys()
+    assert d["sort_by"]["title"]
+
+    with open(filename, "w") as fout:
+        fout.write(toml_dumps({}))
+
+    update_preferences_file_format(Path(tmpdir))
+
+    with open(filename) as fin:
+        d = toml_loads(fin.read())
 
     assert d == {}

@@ -15,7 +15,10 @@ gourmet.desktop
 /debian/gourmand/usr/
 
 # Test outputs
-tests/recipe_files/athenos1.gourmetcleaned.mx2  
+tests/recipe_files/athenos1.gourmetcleaned.mx2
+/Formatted*
+/Simple*
+/Uni*
 
 
 # Virtual environments
