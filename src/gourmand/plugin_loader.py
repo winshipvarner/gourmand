@@ -11,7 +11,6 @@ from gourmand import gglobals
 from gourmand.prefs import Prefs
 
 from .defaults.defaults import loc
-from .gdebug import debug
 
 if sys.version_info < (3, 10):
     from importlib_metadata import entry_points
