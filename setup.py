@@ -189,9 +189,9 @@ setup(
         'importlib-metadata; python_version<"3.10"',
         "lxml>=4.6.3",
         "pillow>=8.3.2",
-        "pygobject>=3.40.1",
+        "pygobject>=3.40.1,<=3.50.0",  # Issues with Ubuntu 22.04: https://github.com/beeware/toga/issues/3143
         "sqlalchemy>=1.4.36,<2",
-        "tomli_w>=1.0.0",
+        "tomli-w>=1.0.0",
         'toml==0.10.2; python_version<"3.11"',
         "recipe-scrapers>=14.27.0,<15",
     ],

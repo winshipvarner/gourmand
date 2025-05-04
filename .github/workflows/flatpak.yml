@@ -9,7 +9,7 @@ on:
 jobs:
   flatpak:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - uses: actions/checkout@v4
@@ -20,7 +20,7 @@ jobs:
     - name: Setup Flatpak
       run: |
         flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
-        flatpak install flathub org.gnome.Platform//45 org.gnome.Sdk//45 -y
+        flatpak install flathub org.gnome.Platform//46 org.gnome.Sdk//46 -y
 
     - name: Build Flatpak
       run: |
