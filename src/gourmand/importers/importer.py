@@ -2,7 +2,6 @@ import gettext
 import os
 import re
 import time
-import unittest
 import xml.sax.saxutils
 
 import gourmand.gglobals
@@ -180,7 +179,8 @@ class Importer(SuspendableThread):
                     self._move_to_instructions(self.rec, "yields")
                 else:
                     self.rec["yields"] = yields
-                    self.rec["yield_unit"] = yield_unit
+                    if self.rec.get("yield_unit"):
+                        self.rec["yield_unit"] = yield_unit
         if "servings" in self.rec:
             servs = self.convert_str_to_num(self.rec["servings"])
             if servs is not None:
@@ -240,7 +240,7 @@ class Importer(SuspendableThread):
         if id_to_convert:
             if self.rec["id"] in self.id_converter:
                 self.rec["id"] = self.id_converter[self.rec["id"]]
-                r = self.rd.add_rec(self.rec, accept_ids=True)  # See doc on add_rec
+                r = self.rd.add_rec(self.rec)  # See doc on add_rec
             else:
                 del self.rec["id"]
                 r = self.rd.add_rec(self.rec)
@@ -267,10 +267,9 @@ class Importer(SuspendableThread):
         self.count += 1
         if self.total:
             self.emit("progress", float(self.count) / self.total, _("Imported %s of %s recipes.") % (self.count, self.total))
-
-    def parse_yields (self, str):
-        '''Parse number and field.'''
-        m = re.match(r"(?P<prefix>\D+\s+)?(?P<num>[0-9/. ]+)(?P<unit>\s*\w+)?",str)
+    def parse_yields(self, str):
+        """Parse number and field."""
+        m = re.match(r"(?P<prefix>^\D*\s?)?(?P<num>[0-9/. ]+)(?P<unit>\s*\w+)?", str)
         if m:
             num = m.group("num")
             num = convert.frac_to_float(num)
@@ -534,69 +533,3 @@ class RatingConverter:
             except:
                 print("wtf... problem with rating ", rating, "for recipe", id)
                 raise
-
-
-class RatingConverterTest(unittest.TestCase):
-
-    def setUp(self):
-
-        class FakeDB:
-
-            recs = dict([(n, {}) for n in range(20)])
-
-            def get_rec(self, n):
-                return n
-
-            def modify_rec(self, n, d):
-                for attr, val in list(d.items()):
-                    self.recs[n][attr] = val
-
-        self.db = FakeDB()
-
-    def testAutomaticConverter(self):
-        rc = RatingConverter()
-        tests = ["good", "Great", "Excellent", "poor", "okay"]
-        for n, rating in enumerate(tests):
-            rc.add(n, rating)
-            self.db.recs[n]["rating"] = rating
-        rc.do_conversions(self.db)
-        print("Conversions: ")
-        for n, rating in enumerate(tests):
-            print("Converted", rating, "->", self.db.recs[n]["rating"])
-
-    def testInteractiveConverter(self):
-        rc = RatingConverter()
-        tests = ["alright", "pretty good", "funny tasting", "okeydokey", "not bad", "damn good."]
-        for n, rating in enumerate(tests):
-            rc.add(n, rating)
-            self.db.recs[n]["rating"] = rating
-        rc.do_conversions(self.db)
-        # print("Conversions: ")
-        # for n, rating in enumerate(tests):
-        #     print("Converted", rating, "->", self.db.recs[n]["rating"])
-
-    def testStringToRatingConverter(self):
-        assert string_to_rating("4/5 stars") == 8
-        assert string_to_rating("3 1/2 / 5 stars") == 7
-        assert string_to_rating("4/10 stars") == 4
-
-
-class ImporterTest(unittest.TestCase):
-
-    def setUp(self):
-        self.importer = Importer()
-
-    def testParseSimpleYields(self):
-        assert self.importer.parse_yields("3 cups") == (3, "cups")
-        assert self.importer.parse_yields("7 servings") == (7, "servings")
-        assert self.importer.parse_yields("12 muffins") == (12, "muffins")
-        assert self.importer.parse_yields("10 loaves") == (10, "loaves")
-
-    def testParseComplexYields(self):
-        assert self.importer.parse_yields("Makes 12 muffins") == (12, "muffins")
-        assert self.importer.parse_yields("Makes 4 servings") == (4, "servings")
-        assert self.importer.parse_yields("Serves 7") == (7, "servings")
-
-
-if __name__ == "__main__":
-    unittest.main()

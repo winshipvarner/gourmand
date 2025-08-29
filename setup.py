@@ -1,5 +1,5 @@
+import ast
 import os
-import re
 from logging import INFO
 from pathlib import Path
 from typing import Union
@@ -20,9 +20,21 @@ LOCALEDIR = PACKAGEDIR / "data" / "locale"
 def get_info(prop: str) -> str:
     with open(PACKAGEDIR / "__version__.py") as versfile:
         content = versfile.read()
-    match = re.search(r'^{} = "(.+)"'.format(prop), content, re.M)
-    if match is not None:
-        return match.group(1)
+    parsed = ast.parse(content)
+    for node in parsed.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        for name in node.targets:
+            if not isinstance(name, ast.Name):
+                continue
+            if name.id != prop:
+                continue
+            if isinstance(node.value, ast.Constant):
+                # "String"
+                return node.value.value
+            elif isinstance(node.value, ast.Call):
+                # _("String")
+                return node.value.args[0].value
     raise RuntimeError(f"Unable to find {prop} string")
 
 
@@ -171,6 +183,8 @@ setup(
     name=PACKAGE,
     version=get_info("version"),
     description=get_info("description"),
+    long_description=get_info("long_description"),
+    long_description_content_type="text/markdown",
     author=get_info("author"),
     maintainer=get_info("maintainer"),
     maintainer_email=get_info("maintainer_email"),
@@ -189,9 +203,9 @@ setup(
         'importlib-metadata; python_version<"3.10"',
         "lxml>=4.6.3",
         "pillow>=8.3.2",
-        "pygobject>=3.40.1",
+        "pygobject>=3.40.1,<=3.50.0",  # Issues with Ubuntu 22.04: https://github.com/beeware/toga/issues/3143
         "sqlalchemy>=1.4.36,<2",
-        "tomli_w>=1.0.0",
+        "tomli-w>=1.0.0",
         'toml==0.10.2; python_version<"3.11"',
         "recipe-scrapers>=14.27.0,<15",
     ],

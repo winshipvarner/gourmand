@@ -1,7 +1,5 @@
 import unittest
 
-import pytest
-
 from gourmand import convert
 
 
@@ -13,7 +11,6 @@ class ConvertTest(unittest.TestCase):
     def test_equal(self):
         self.assertEqual(self.c.convert_simple("c", "c"), 1)
 
-    @pytest.mark.skip("Broken as of 20220813")
     def test_density(self):
         self.assertEqual(self.c.convert_w_density("ml", "g", item="water"), 1)
         self.assertEqual(self.c.convert_w_density("ml", "g", density=0.5), 0.5)
@@ -38,20 +35,23 @@ class ConvertTest(unittest.TestCase):
             ("1", 1),
             ("123", 123),
             ("1 1/2", 1.5),
-            # ("74 2/5", 74.4),  # TODO: Broken.
+            ("74 2/5", 74.4),
             ("1/10", 0.1),
             ("one", 1),
             ("a half", 0.5),
             ("three quarters", 0.75),
+            ("0.5", 0.5),
+            ("0,5", 0.5),
         ]:
             self.assertEqual(convert.frac_to_float(s), n)
 
-    @pytest.mark.skip("Broken as of 20220813")
     def test_ingmatcher(self):
         for s, a, u, i in [
             ("1 cup sugar", "1", "cup", "sugar"),
             ("1 1/2 cup sugar", "1 1/2", "cup", "sugar"),
             ("two cloves garlic", "two", "cloves", "garlic"),
+            ("0.5 cl gin", "0.5", "cl", "gin"),
+            ("0,5 cl gin", "0,5", "cl", "gin"),
         ]:
             match = convert.ING_MATCHER.match(s)
             self.assertTrue(match)

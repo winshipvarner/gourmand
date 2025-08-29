@@ -9,18 +9,19 @@ on:
 jobs:
   flatpak:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     - uses: actions/checkout@v4
     - name: Install Flatpak
       run: |
+        sudo apt-get update
         sudo apt install flatpak flatpak-builder
 
     - name: Setup Flatpak
       run: |
         flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
-        flatpak install flathub org.gnome.Platform//45 org.gnome.Sdk//45 -y
+        flatpak install flathub org.gnome.Platform//48 org.gnome.Sdk//48 -y
 
     - name: Build Flatpak
       run: |
