@@ -676,12 +676,14 @@ class RecipeModel(pageable_store.PageableViewStore):
     def _get_value_(self, row, attr):
         if attr == "category":
             cats = self.rd.get_cats(row)
-            if cats: return ", ".join(cats)
-            else: return ""
-        elif attr=='last_modified':
+            if cats: 
+                return ", ".join(cats)
+            else: 
+                return ""
+        elif attr=="last_modified":
             val = getattr(row,attr) or 0
             return time.ctime(val)
-        elif attr=='rec':
+        elif attr=="rec":
             return row
         elif attr == "thumb":
             if row.thumb:

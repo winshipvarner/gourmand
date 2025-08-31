@@ -1,6 +1,5 @@
-from gi.repository import Gtk
-
 import gourmand.gtk_extras.dialog_extras as de
+from gi.repository import Gtk
 from gourmand.i18n import _
 from gourmand.plugin import MainPlugin, UIPlugin
 
