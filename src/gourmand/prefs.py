@@ -2,7 +2,6 @@ import shutil
 from pathlib import Path
 from sys import version_info
 from typing import Any, Optional
-import sys
 
 if version_info >= (3, 11):
     from tomllib import loads as toml_loads

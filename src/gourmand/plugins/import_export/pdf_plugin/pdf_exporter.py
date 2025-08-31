@@ -922,8 +922,7 @@ class PdfPrefGetter:
         self.page_drawer = PdfPageDrawer(yalign=0.0)
         self.in_ccb = False
         self.setup_widgets()
-        ret_value = self.table.connect('changed',self.change_cb)
-        self.table.emit('changed')
+        self.table.emit("changed")
         self.page_drawer.set_size_request(200,100)
         self.page_drawer.show()
 

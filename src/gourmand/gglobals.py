@@ -101,7 +101,7 @@ def add_icon(pixbuf: GdkPixbuf.Pixbuf, stock_id: str, label: str = None, modifie
     #Gtk.stock_add([(stock_id, label, modifier, keyval, "")])
 
 #for filename, stock_id, label, modifier, keyval in [
-#    ('AddToShoppingList.png', 
+#    ('AddToShoppingList.png',
 #    'add-to-shopping-list',
 #     _('Add to _Shopping List'),
 #     Gdk.ModifierType.CONTROL_MASK,

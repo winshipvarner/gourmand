@@ -4,8 +4,8 @@ import os.path
 import sys
 import traceback
 from typing import Dict, List
-#import pkg_resources
-import importlib
+import pkg_resources
+#import importlib
 
 from gourmand import gglobals
 from gourmand.prefs import Prefs

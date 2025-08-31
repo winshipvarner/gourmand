@@ -244,7 +244,6 @@ class DatabasePlugin(StandardPlugin):
             return
         self.db = db
         if db._created:
-            print("TESTING:", db._created)
             # For creation after DB is initialized...
             try:
                 self.create_tables()

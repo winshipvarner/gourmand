@@ -1,9 +1,7 @@
-from gi.repository import Gtk
-
 import gourmand.gtk_extras.dialog_extras as de
+from gi.repository import Gtk
 from gourmand.i18n import _
-from gourmand.plugin import MainPlugin, RecDisplayModule, ToolPlugin, UIPlugin
-
+from gourmand.plugin import MainPlugin, UIPlugin
 from .recipe_emailer import RecipeEmailer
 
 class EmailRecipePlugin (MainPlugin, UIPlugin):
@@ -58,4 +56,3 @@ class EmailRecipePlugin (MainPlugin, UIPlugin):
         re.send_email_with_attachments()
   
 plugins = [EmailRecipePlugin]
-

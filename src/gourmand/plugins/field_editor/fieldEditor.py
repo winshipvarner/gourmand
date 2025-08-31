@@ -34,7 +34,7 @@ class FieldEditor:
         )
 
     def __setup_widgets__(self):
-        sorted_model = Gtk.TreeModelSort()
+        #sorted_model = Gtk.TreeModelSort()
         for w in [
             "valueDialog",
             "treeview",
@@ -75,9 +75,9 @@ class FieldEditor:
         except TypeError:
             pass
         else:
-            renderer.set_property('wrap-mode',Gtk.WrapMode.WORD)
-            renderer.set_property('wrap-width',400)
-        col = Gtk.TreeViewColumn('Value', renderer, text=0)
+            renderer.set_property("wrap-mode",Gtk.WrapMode.WORD)
+            renderer.set_property("wrap-width",400)
+        col = Gtk.TreeViewColumn("Value", renderer, text=0)
         col.set_sort_column_id(0)
         self.treeview.append_column(col)
         self.treeview.get_selection().connect("changed", self.treeViewSelectionChanged)
