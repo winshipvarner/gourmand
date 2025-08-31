@@ -1697,8 +1697,6 @@ class IngredientController(plugin_loader.Pluggable):
         amount: Optional[float] = None,
         unit: Optional[str] = None,
         item: Optional[str] = None,
-        #refid: Optional[int] = None,
-        #ingkey: Optional[int] = None,
         optional: Optional[bool] = None,
         **unused
     ):

@@ -1,8 +1,4 @@
 import subprocess
-import sys
-
-from gourmand.gdebug import debug
-
 
 class Emailer:
     def __init__ (self, emailaddress=None, subject=None, body=None, attachments=[]):
@@ -12,7 +8,7 @@ class Emailer:
         self.attachments=attachments
 
     def send_email (self):
-        build_command = ["xdg-email"] 
+        build_command = ["xdg-email"]
         if self.subject:
             build_command.extend(["--subject", self.subject])
         if self.body:
