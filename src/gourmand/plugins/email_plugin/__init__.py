@@ -47,7 +47,7 @@ class EmailRecipePlugin (MainPlugin, UIPlugin):
                 # only called for l>20, so fancy gettext methods
                 # shouldn't be necessary if my knowledge of
                 # linguistics serves me
-                sublabel=_('Do you really want to email all %s selected recipes?')%l,
+                sublabel=_('Do you really want to email all %s selected recipes?') % lgth,
                 custom_yes=_('Yes, e_mail them'),
                 cancel=False,
                 ):
