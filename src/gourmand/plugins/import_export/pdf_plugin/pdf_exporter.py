@@ -923,7 +923,7 @@ class PdfPrefGetter:
         self.in_ccb = False
         self.setup_widgets()
         self.table.emit("changed")
-        self.page_drawer.set_size_request(200,100)
+        self.page_drawer.set_size_request(200, 100)
         self.page_drawer.show()
 
     def setup_widgets(self):

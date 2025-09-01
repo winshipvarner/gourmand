@@ -45,6 +45,7 @@ class UnitDisplayPlugin(ToolPlugin):
 
 
 class UnitDisplayDatabasePlugin(DatabasePlugin):
+
     def activate(self, db):
         db.add_hook(PRE, "get_amount_and_unit", self.get_amount_and_unit_hook)
 
