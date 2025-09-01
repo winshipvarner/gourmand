@@ -1,8 +1,8 @@
-import gourmand.gtk_extras.dialog_extras as de
 from gi.repository import Gtk
 from gourmand.i18n import _
 from gourmand.plugin import MainPlugin, UIPlugin
 from .recipe_emailer import RecipeEmailer
+import gourmand.gtk_extras.dialog_extras as de
 
 class EmailRecipePlugin (MainPlugin, UIPlugin):
 
@@ -40,8 +40,8 @@ class EmailRecipePlugin (MainPlugin, UIPlugin):
         recs = self.get_selected_recs()
         if recs is None:
             return None
-        l = len(recs)
-        if l > 20:
+        lgth = len(recs)
+        if lgth > 20:
             if not de.getBoolean(
                 title=_('Email recipes'),
                 # only called for l>20, so fancy gettext methods
@@ -54,5 +54,5 @@ class EmailRecipePlugin (MainPlugin, UIPlugin):
                 return
         re = RecipeEmailer(recs)
         re.send_email_with_attachments()
-  
+
 plugins = [EmailRecipePlugin]

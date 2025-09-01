@@ -1,6 +1,7 @@
 import io
 import os.path
 import tempfile
+
 import gourmand.exporters.exporter as exporter
 from gourmand.exporters.exportManager import ExportManager
 from gourmand.i18n import _
@@ -17,8 +18,8 @@ class StringIOfaker(io.StringIO):
     def close_really(self):
         io.StringIO.close(self)
 
-class RecipeEmailer (Emailer):
-    def __init__ (self, recipes, attachment_types=["pdf", "grmt"], do_text=True):
+class RecipeEmailer(Emailer):
+    def __init__(self, recipes, attachment_types=["pdf", "grmt"], do_text=True):
         Emailer.__init__(self)
         self.attachments_left = self.attachment_types = list(attachment_types)
         self.recipes = recipes
@@ -39,7 +40,7 @@ class RecipeEmailer (Emailer):
         self.body += s.getvalue()
         s.close_really()
 
-    def write_attachments (self):
+    def write_attachments(self):
         self.attachments = []
         em = ExportManager.instance()
         print("self.attachments_left: ",self.attachments_left)
