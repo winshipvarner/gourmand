@@ -1,5 +1,6 @@
 import subprocess
 
+
 class Emailer:
     def __init__(self, emailaddress=None, subject=None, body=None, attachments=[]):
         self.emailaddress = None

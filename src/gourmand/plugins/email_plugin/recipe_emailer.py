@@ -6,7 +6,9 @@ import gourmand.exporters.exporter as exporter
 from gourmand.exporters.exportManager import ExportManager
 from gourmand.i18n import _
 from gourmand.main import get_application
+
 from .emailer import Emailer
+
 
 class StringIOfaker(io.StringIO):
     def __init__(self, *args, **kwargs):
