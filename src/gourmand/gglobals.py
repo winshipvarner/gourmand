@@ -36,7 +36,7 @@ REC_ATTRS = [
     ("yield_unit", _("Yield Unit"), "Combo"),
     ("preptime", _("Preparation Time"), "Entry"),
     ("cooktime", _("Cooking Time"), "Entry"),
-    ('last_modified', _('Last Modified'), None),
+    ("last_modified", _("Last Modified"), None),
 ]
 
 INT_REC_ATTRS = ["rating", "preptime", "cooktime"]

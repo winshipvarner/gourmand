@@ -1192,7 +1192,7 @@ class Language(AbstractLanguage):
         ("Japanese cup", "ml"): 200,
         ("metric cup", "ml"): 250,
         ("Imperial cup", "ml"): 284.130625,
-        ("Imperial pint","oz"): 20,
+        ("Imperial pint", "oz"): 20,
         ("l", "ml"): 1000,
         ("l", "cl"): 100,
         ("l", "dl"): 10,
