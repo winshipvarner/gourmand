@@ -5,7 +5,6 @@ import sys
 import traceback
 from typing import Dict, List
 
-
 from gourmand import gglobals
 from gourmand.gdebug import debug
 from gourmand.prefs import Prefs
