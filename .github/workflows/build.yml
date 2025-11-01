@@ -17,13 +17,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
+        python: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13', '3.14']
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
 
     - name: set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python }}
 
@@ -43,7 +43,7 @@ jobs:
           mv dist/gourmand-*-py3-none-any.whl dist/gourmand-${GITHUB_SHA::8}-py3-none-any.whl
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
           name: gourmand_${{ matrix.python }}
           path: ./dist/gourmand-*
