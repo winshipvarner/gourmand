@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Install Flatpak
       run: |
         sudo apt-get update
@@ -35,7 +35,7 @@ jobs:
         flatpak build-bundle repo gourmand-${GITHUB_SHA::8}.flatpak io.github.GourmandRecipeManager.Gourmand
 
     - name: Upload Flatpak
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v6
       with:
         name: gourmand.flatpak
         path: ./gourmand-*.flatpak
