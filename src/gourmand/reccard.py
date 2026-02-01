@@ -605,7 +605,7 @@ class RecCardDisplay(plugin_loader.Pluggable):
     def forget_remembered_optional_ingredients(self):
         pass
 
-    def offer_url(self, label: str, url: str):
+    def offer_url(self, label1: str, url: str):
         if hasattr(self, "progress_dialog"):
             self.hide_progress_dialog()
         # Clear existing messages...
@@ -613,7 +613,7 @@ class RecCardDisplay(plugin_loader.Pluggable):
             self.messagebox.remove(child)
         # Add new message
         label = Gtk.Label()
-        label.set_markup(label)
+        label.set_markup(label1)
         label.connect("activate-link", lambda lbl, uri: webbrowser.open_new_tab(uri))
         infobar = Gtk.InfoBar()
         infobar.set_message_type(Gtk.MessageType.INFO)

@@ -1,3 +1,4 @@
+import time
 """Import recipes from the web using recipe-scrapers."""
 
 from typing import List, Tuple
@@ -160,7 +161,7 @@ def initialize_recipe(recipe_scraped, image=None, thumbnail=None):
         recipe_hash=None,
         ingredient_hash=None,
         link=recipe_scraped.canonical_url(),
-        last_modified=None,
+        last_modified=time.time(),
         nutrients=recipe_scraped.nutrients(),
         category=recipe_scraped.category(),
     )
